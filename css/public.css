@@ -1,13 +1,6 @@
-@charset "UTF-8";
 @font-face {
   font-family: hsg;
   src: url("../font/HSG.otf"); }
-html {
-  font-family: "hsg","微软雅黑","Microsoft YaHei",'Heiti SC',"宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
-  outline: 0;
-  -webkit-text-size-adjust: none;
-  font-size: 62.5%; }
-
 footer {
   background-color: #eeeeee; }
 
@@ -96,5 +89,27 @@ footer {
   background-color: #e4e4e4;
   line-height: 0.8rem;
   color: #888888; }
+
+.titles ul li:nth-child(1) p {
+  text-align: center;
+  font-size: 0.32rem;
+  color: #333333;
+  line-height: 0.32rem; }
+.titles ul li:nth-child(2) p {
+  text-align: center;
+  font-size: 0.24rem;
+  color: #c8c8c8;
+  font-family: arial;
+  line-height: 0.5rem; }
+.titles ul li:nth-child(3) span {
+  display: block;
+  width: 0.8rem;
+  border-bottom: 1px solid #a51e32;
+  margin: 0 auto;
+  margin-top: 0.1rem; }
+
+.box {
+  width: 94.67%;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=public.css.map */

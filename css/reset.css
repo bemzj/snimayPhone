@@ -23,7 +23,12 @@ html,body{
 -o-tap-highlight-color:rgba(0, 0, 0, 0);  
 tap-highlight-color:rgba(0, 0, 0, 0);  
 }
-html {height: 100%;width: 100%;font-family: "微软雅黑","Microsoft YaHei",'Heiti SC',"宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;outline: 0;-webkit-text-size-adjust:none;font-size:62.5%}
+@font-face
+{
+    font-family: hsw;
+    src: url('../font/HSG.otf');    
+}
+html {height: 100%;width: 100%;font-family:"hsw", "微软雅黑","Microsoft YaHei",'Heiti SC',"宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;outline: 0;-webkit-text-size-adjust:none;font-size:62.5%}
 body {height: 100%;margin: 0;position: relative;}
 img{
 	display:block;
