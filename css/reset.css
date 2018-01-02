@@ -4,10 +4,10 @@ img,fieldset,input[type="submit"]{border:0 none;}
 em{font-style:normal;}
 strong{font-weight:normal;}
 table{border-collapse:collapse;border-spacing:0;}
-button,input[type="button"]{cursor:pointer;border:0 none;}
+button,input[type="button"]{cursor:pointer;border:0 none;outline: none;}
 a,button,input,img{-webkit-touch-callout:none;}
 input,select,textarea{outline:none;}
-a{text-decoration:none;}
+a{text-decoration:none;display: block;}
 .fl{ float: left}
 .fr{ float: right}
 .clear{clear:both;} 
@@ -23,7 +23,7 @@ html,body{
 -o-tap-highlight-color:rgba(0, 0, 0, 0);  
 tap-highlight-color:rgba(0, 0, 0, 0);  
 }
-html {height: 100%;width: 100%;font-family: 'Microsoft YaHei', 'Heiti SC';outline: 0;-webkit-text-size-adjust:none;font-size:62.5%}
+html {height: 100%;width: 100%;font-family: "微软雅黑","Microsoft YaHei",'Heiti SC',"宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;outline: 0;-webkit-text-size-adjust:none;font-size:62.5%}
 body {height: 100%;margin: 0;position: relative;}
 img{
 	display:block;
@@ -33,4 +33,30 @@ figure{
 }
 li{
 	list-style:none;
+}
+.floatl{
+	float: left;
+}
+.floatr{
+	float: right;
+}
+.clearl{
+	clear: left;
+}
+.clearr{
+	clear: right;
+}
+.clearBoth{
+	clear: both;
+}
+input[type="search"]{-webkit-appearance:none;} 
+input[type=search]::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+
+    position: relative;
+    height: 0.24rem;
+    width: 0.24rem;
+    border-radius: 50%;
+    background:url(../img/closes.png) no-repeat center center;
+    background-size: cover;
 }

@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@font-face {
+  font-family: hsg;
+  src: url("../font/HSG.otf"); }
+html {
+  font-family: "hsg","微软雅黑","Microsoft YaHei",'Heiti SC',"宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  font-size: 62.5%; }
+
+footer {
+  background-color: #eeeeee; }
+
+.moreLink {
+  padding: 0.2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column;
+  width: 94.67%;
+  margin: 0 auto;
+  border-bottom: 1px solid #c8c8c8; }
+  .moreLink ul {
+    height: 0.5rem;
+    margin: 0 auto; }
+  .moreLink ul li {
+    float: left;
+    font-size: 0.24rem; }
+    .moreLink ul li a {
+      font-size: 0.24rem;
+      line-height: 0.5rem;
+      color: #888888; }
+      .moreLink ul li a span {
+        display: inline-block;
+        padding: 0 0.05rem; }
+
+.moreFun {
+  padding: 0.4rem 0;
+  width: 94.67%;
+  margin: 0 auto; }
+  .moreFun .floatl {
+    width: 31%;
+    margin-right: 3.5%;
+    background-color: #e4e4e4;
+    padding: 0.25rem 0; }
+    .moreFun .floatl .funBox {
+      width: 0.8rem;
+      height: 0.8rem;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 50%;
+      background-color: white; }
+      .moreFun .floatl .funBox img {
+        display: block;
+        width: 50%;
+        height: 50%;
+        margin: 25%; }
+    .moreFun .floatl .funP {
+      margin-top: 0.2rem; }
+      .moreFun .floatl .funP p {
+        text-align: center;
+        font-size: 0.28rem;
+        color: #888888;
+        line-height: 0.28rem; }
+  .moreFun .floatl:nth-last-child(2) {
+    margin-right: 0%; }
+
+.chatBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column; }
+  .chatBox ul li {
+    float: left;
+    margin-bottom: 0.4rem; }
+    .chatBox ul li a {
+      display: block;
+      width: 0.8rem; }
+      .chatBox ul li a img {
+        width: 100%; }
+  .chatBox ul li:nth-child(1) a {
+    margin-right: 0.3rem; }
+
+.case {
+  text-align: center;
+  font-size: 0.24rem;
+  width: 100%;
+  background-color: #e4e4e4;
+  line-height: 0.8rem;
+  color: #888888; }
+
+/*# sourceMappingURL=public.css.map */
