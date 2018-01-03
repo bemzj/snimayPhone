@@ -29,4 +29,21 @@ $(function(){
 
 	    }
 	});
+	//3种选择
+	$('.choice3 button').on('click',function(){
+		$('.choice3 button').removeClass('redmalBtn');
+		$(this).addClass('redmalBtn');
+		var index = parseInt($(this).attr('index'));
+		switch(index){
+			case 1:
+				$('.joinImg img').attr('src','img/centerImg01.jpg');
+				break;
+			case 2:
+				$('.joinImg img').attr('src','img/centerImg02.jpg');
+				break;
+			case 3:
+				$('.joinImg img').attr('src','img/centerImg03.jpg');
+				break;
+		}
+	});
 });

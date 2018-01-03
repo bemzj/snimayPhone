@@ -1,0 +1,114 @@
+#Introduction {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 0.6rem; }
+
+.fSelect {
+  width: 100%;
+  overflow-x: scroll; }
+  .fSelect .fSBox {
+    width: 125%; }
+    .fSelect .fSBox .floatl {
+      width: 24.25%;
+      margin-right: 1%; }
+      .fSelect .fSBox .floatl button {
+        width: 100%;
+        border: 1px solid #c8c8c8;
+        line-height: 0.7rem;
+        display: block;
+        color: #888888;
+        font-size: 0.28rem; }
+      .fSelect .fSBox .floatl .activeBtn {
+        background-color: #a51e32;
+        color: white;
+        border-color: #a51e32; }
+    .fSelect .fSBox .floatl:nth-last-child(2) {
+      margin-right: 0; }
+
+.cContent {
+  padding: 0.6rem 0 0; }
+  .cContent .imgAndText {
+    width: 98%;
+    margin: 0 auto; }
+    .cContent .imgAndText ul li {
+      margin-top: 0.4rem; }
+    .cContent .imgAndText img {
+      width: 100%; }
+    .cContent .imgAndText p {
+      font-size: 0.24rem;
+      line-height: 0.6rem;
+      color: #888888; }
+  .cContent .imgAndP {
+    margin-top: 0.4rem; }
+    .cContent .imgAndP img {
+      width: 100%; }
+    .cContent .imgAndP p {
+      font-size: 0.28rem;
+      line-height: 1.0rem;
+      color: #888888;
+      text-align: center; }
+  .cContent .vision ul li:nth-child(1) {
+    margin-top: 0; }
+
+#selectBox {
+  width: 100%;
+  overflow: hidden; }
+
+#development {
+  padding: 0.6rem 0; }
+  #development .developBox {
+    width: 92.93%;
+    margin-left: 4.27%;
+    border-left: 1px  dotted #939393; }
+  #development .thing {
+    width: 94%;
+    margin-left: 6%;
+    background-color: #eeeeee;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    padding: 0.25rem 0; }
+    #development .thing ul {
+      width: 90%;
+      margin: 0 auto; }
+  #development .circle {
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 50%;
+    border: 1px solid #c9c9c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column;
+    position: absolute;
+    background-color: white;
+    left: -0.15rem;
+    top: 0.3rem;
+    margin-left: -2px; }
+    #development .circle > div {
+      width: 0.15rem;
+      height: 0.15rem;
+      border-radius: 50%;
+      background-color: #a51e32; }
+  #development .year {
+    position: relative; }
+    #development .year p {
+      width: 94%;
+      margin-left: 6%;
+      font-size: 0.3rem;
+      color: #888888;
+      line-height: 1rem; }
+  #development .thingTitle {
+    font-size: 0.3rem;
+    color: #333333;
+    margin-bottom: 0.1rem;
+    margin-top: 0.08rem; }
+  #development .thingContent {
+    font-size: 0.26rem;
+    color: #888888;
+    line-height: 0.45rem; }
+
+/*# sourceMappingURL=about.css.map */

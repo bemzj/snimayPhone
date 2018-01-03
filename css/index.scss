@@ -6,7 +6,7 @@ $black:#333333;
 $red:#a51e32;
 #center{
     .boxCenter{
-        padding-bottom: 0.5rem;
+        padding-bottom: 0.8rem;
         .centerChild{
             width: 48%;
             margin-right: 4%;
@@ -48,7 +48,7 @@ $red:#a51e32;
 }
 .roomBox{
     margin-top: 0.4rem;
-    margin-bottom: 0.4rem;
+    margin-bottom: 1.0rem;
     position: relative;
     >img{
         width: 100%;
@@ -109,16 +109,8 @@ $red:#a51e32;
     background-color: $coloree;
     color: $color8;
 }
-.redmalBtn{
-    width: 100%;
-    height: 0.7rem;
-    display: block;
-    background-color: $red;
-    color: white;
-    font-size: 0.28rem;
-}
 #join{
-    padding-bottom: 0.4rem;
+    padding-bottom: 1.0rem;
     .choice3{
         margin-top: 0.4rem;
         .floatl{
@@ -154,7 +146,7 @@ $red:#a51e32;
     }
 }
 #business{
-    padding: 0.4rem 0;
+    padding: 1.0rem 0;
     .sixPart{
         a{
             width: 33%;
