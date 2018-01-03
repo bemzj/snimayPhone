@@ -11,13 +11,55 @@ $(function(){
 	for(var i=0;i<years.length;i++)
 	{
 		var html = "";
-		html += '<div class="devChild"><div class="year"><p>'+years[i]+'</p><div class="circle"><div></div></div></div>';
+		html += '<div class="devChild" data-scroll-reveal="enter right and move 50px"><div class="year"><p>'+years[i]+'</p><div class="circle"><div></div></div></div>';
 		html += '<div class="thing"><ul><li><p class="thingTitle">'+title[i]+'</p></li><li><p class="thingContent">'+content[i]+'</p>';
 		html += '</li></ul></div></div>';
-		$('.developBox').prepend(html);
+		$('.developBox').append(html);
 	}
-	
-					
+	//开启滑动动画
+	if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+		(function() {
+			window.scrollReveal = new scrollReveal({
+				reset: true
+			});
+		})();
+	};
+	//选择地区
+	$('.choice2 select').change(function(){
+		$(this).prev('p').html($(this).children('option:selected').val());
+	});
+	//选择
+	$('.fSBox button').on('click',function(){
+		$('.fSBox button').removeClass('activeBtn');
+		$(this).addClass('activeBtn');
+		var index = parseInt($(this).attr('index'));
+		switch(index){
+			case 1:
+				$('#Introduction').show();
+				$('#net').hide();
+				$('#honor').hide();
+				$('#development').hide();
+				break;
+			case 2:
+				$('#Introduction').hide();
+				$('#net').hide();
+				$('#honor').hide();
+				$('#development').show();
+				break;
+			case 3:
+				$('#Introduction').hide();
+				$('#net').hide();
+				$('#honor').show();
+				$('#development').hide();
+				break;
+			case 4:
+				$('#Introduction').hide();
+				$('#net').show();
+				$('#honor').hide();
+				$('#development').hide();
+				break;
+		}
+	});
 						
 						
 							

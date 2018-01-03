@@ -55,9 +55,11 @@
   overflow: hidden; }
 
 #development {
-  padding: 0.6rem 0; }
+  padding: 0.8rem 0; }
+  #development .titles {
+    margin-bottom: 0.4rem; }
   #development .developBox {
-    width: 92.93%;
+    width: 90%;
     margin-left: 4.27%;
     border-left: 1px  dotted #939393; }
   #development .thing {
@@ -110,5 +112,130 @@
     font-size: 0.26rem;
     color: #888888;
     line-height: 0.45rem; }
+
+#net {
+  padding: 0.8rem 0; }
+  #net .choice2 {
+    margin-top: 0.4rem; }
+    #net .choice2 > .flr {
+      width: 48%;
+      position: relative;
+      border: 1px solid #c8c8c8;
+      background-color: #eeeeee; }
+      #net .choice2 > .flr > p {
+        line-height: 0.8rem;
+        font-size: 0.28rem;
+        color: #333333;
+        text-indent: 0.28rem;
+        background: url(../img/rArrow.png) no-repeat 92% center;
+        background-size: auto 0.34rem; }
+      #net .choice2 > .flr button {
+        display: block;
+        height: 0.8rem;
+        font-size: 0.28rem;
+        color: #888888;
+        background-size: auto 0.34rem;
+        width: 100%;
+        background-color: #eeeeee; }
+      #net .choice2 > .flr > select {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 2; }
+    #net .choice2 > .floatl {
+      margin-left: -1px; }
+      #net .choice2 > .floatl button {
+        background-color: white; }
+    #net .choice2 > .floatr {
+      margin-right: -1px; }
+  #net .pn {
+    margin-top: 0.8rem; }
+  #net .searchBox {
+    width: 100%;
+    border: 1px solid #c8c8c8;
+    height: 0.8rem;
+    margin-left: -1px;
+    background: url(../img/search.png) no-repeat 0.2rem center;
+    background-size: auto 0.32rem;
+    overflow: hidden;
+    margin-top: 0.2rem; }
+    #net .searchBox input {
+      display: block;
+      width: 85%;
+      border: 0;
+      height: 100%;
+      margin-left: 12%;
+      margin-top: 1px; }
+  #net .storeChild {
+    width: 100%;
+    margin-left: -1px;
+    background-color: #eeeeee;
+    border: 1px solid #eeeeee;
+    margin-top: 0.4rem; }
+    #net .storeChild .sName {
+      width: 97%;
+      margin: 0 auto;
+      border-bottom: 1px solid #c8c8c8; }
+      #net .storeChild .sName p {
+        width: 90%;
+        padding-left: 5%;
+        font-size: 0.32rem;
+        color: #333333;
+        line-height: 0.8rem;
+        padding-top: 0.1rem; }
+    #net .storeChild .sAddress {
+      width: 97%;
+      margin: 0 auto;
+      margin-top: 0.2rem; }
+      #net .storeChild .sAddress p {
+        width: 88%;
+        padding-left: 12%;
+        font-size: 0.26rem;
+        color: #888888;
+        line-height: 0.5rem;
+        background: url(../img/address.png) no-repeat 6% 0.1rem;
+        background-size: auto 0.3rem; }
+    #net .storeChild .sTime {
+      width: 97%;
+      margin: 0 auto;
+      margin-bottom: 0.2rem; }
+      #net .storeChild .sTime p {
+        width: 88%;
+        padding-left: 12%;
+        font-size: 0.26rem;
+        color: #888888;
+        line-height: 0.5rem;
+        background: url(../img/time.png) no-repeat 6% 0.1rem;
+        background-size: auto 0.24rem; }
+
+#honor {
+  padding: 0.8rem 0; }
+  #honor .titles {
+    margin-bottom: 0.4rem; }
+  #honor .oneImg {
+    width: 100%;
+    margin-bottom: 0.3rem; }
+    #honor .oneImg img {
+      width: 100%; }
+  #honor .TwoImg {
+    width: 100%;
+    margin-bottom: 0.3rem; }
+    #honor .TwoImg .tLeft {
+      width: 48%; }
+    #honor .TwoImg .tRight {
+      width: 49%; }
+    #honor .TwoImg img {
+      width: 100%; }
+  #honor .honorp {
+    width: 96%;
+    margin: 0 auto;
+    padding-top: 0.1rem;
+    font-size: 0.26rem;
+    line-height: 0.6rem;
+    color: #888888;
+    word-break: break-all; }
 
 /*# sourceMappingURL=about.css.map */
