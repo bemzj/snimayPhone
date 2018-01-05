@@ -2,7 +2,7 @@
   margin-top: 1px; }
   #fourChoice .floatl {
     width: 24.5%;
-    margin-right: 0.67%; }
+    margin-right: 0.65%; }
     #fourChoice .floatl button {
       width: 100%;
       display: block;
@@ -46,18 +46,18 @@
         #press .pressBox .pressImg .cross img {
           width: 0.4rem; }
     #press .pressBox .pressTitle {
-      font-size: 0.32rem;
+      font-size: 0.3rem;
       text-align: center;
       line-height: 0.5rem;
-      color: #888888;
+      color: #333333;
       margin-top: 0.25rem; }
       #press .pressBox .pressTitle p {
         width: 90%;
         margin: 0 auto; }
     #press .pressBox .pressMessage {
-      color: #c8c8c8;
+      color: #888888;
       text-align: center;
-      font-size: 0.28rem;
+      font-size: 0.26rem;
       line-height: 0.5rem;
       margin-bottom: 0.2rem; }
       #press .pressBox .pressMessage p {
@@ -104,41 +104,258 @@
         width: 0.8rem; }
     #details .paperBox > img {
       width: 100%; }
-  #details .choice2 {
-    margin-top: 0.4rem; }
-    #details .choice2 > .flr {
-      width: 48%;
-      position: relative;
-      border: 1px solid #c8c8c8;
+
+nav {
+  background-color: #f6f6f6;
+  box-shadow: 0 0 2px 2px rgba(51, 51, 51, 0.1);
+  position: relative; }
+
+.choice2 {
+  margin-top: 0.4rem;
+  padding-bottom: 0.8rem; }
+  .choice2 > .flr {
+    width: 48%;
+    position: relative;
+    border: 1px solid #c8c8c8;
+    background-color: #eeeeee; }
+    .choice2 > .flr > p {
+      line-height: 0.8rem;
+      font-size: 0.28rem;
+      color: #333333;
+      text-indent: 0.28rem;
+      background: url(../img/rArrow.png) no-repeat 92% center;
+      background-size: auto 0.34rem; }
+    .choice2 > .flr button {
+      display: block;
+      height: 0.8rem;
+      font-size: 0.28rem;
+      color: #888888;
+      background-size: auto 0.34rem;
+      width: 100%;
       background-color: #eeeeee; }
-      #details .choice2 > .flr > p {
-        line-height: 0.8rem;
-        font-size: 0.28rem;
-        color: #333333;
-        text-indent: 0.28rem;
-        background: url(../img/rArrow.png) no-repeat 92% center;
-        background-size: auto 0.34rem; }
-      #details .choice2 > .flr button {
-        display: block;
-        height: 0.8rem;
-        font-size: 0.28rem;
-        color: #888888;
-        background-size: auto 0.34rem;
-        width: 100%;
-        background-color: #eeeeee; }
-      #details .choice2 > .flr > select {
+    .choice2 > .flr > select {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      z-index: 2; }
+  .choice2 > .floatl {
+    margin-left: -1px; }
+    .choice2 > .floatl button {
+      background-color: white; }
+  .choice2 > .floatr {
+    margin-right: -1px; }
+
+#videoCenter {
+  padding: 0.6rem 0 0.8rem; }
+  #videoCenter .vcBox {
+    border: 1px solid #c8c8c8;
+    margin-bottom: 0.4rem; }
+    #videoCenter .vcBox .vcImg {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 0.3rem;
+      position: relative;
+      overflow: hidden; }
+      #videoCenter .vcBox .vcImg video {
+        width: 100%; }
+      #videoCenter .vcBox .vcImg .playVideo {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        opacity: 0;
-        z-index: 2; }
-    #details .choice2 > .floatl {
-      margin-left: -1px; }
-      #details .choice2 > .floatl button {
-        background-color: white; }
-    #details .choice2 > .floatr {
-      margin-right: -1px; }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: -webkit-flex;
+        -webkit-align-items: center;
+        -webkit-justify-content: center;
+        -webkit-flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5); }
+        #videoCenter .vcBox .vcImg .playVideo img {
+          width: 15%; }
+    #videoCenter .vcBox .vcTitle {
+      font-size: 0.3rem;
+      text-align: center;
+      line-height: 0.5rem;
+      color: #333333;
+      margin-top: 0.25rem; }
+      #videoCenter .vcBox .vcTitle p {
+        width: 90%;
+        margin: 0 auto; }
+    #videoCenter .vcBox .vcMessage {
+      color: #888888;
+      text-align: center;
+      font-size: 0.26rem;
+      line-height: 0.5rem;
+      margin-bottom: 0.2rem; }
+      #videoCenter .vcBox .vcMessage p {
+        width: 90%;
+        margin: 0 auto; }
+  #videoCenter .vcBox:nth-last-child(1) {
+    margin-bottom: 0; }
+
+.video-js .vjs-big-play-button {
+  display: none !important; }
+
+.vjs-poster {
+  left: auto; }
+
+.video-js.vjs-fullscreen {
+  width: 100% !important;
+  height: 90% !important;
+  padding-top: 0 !important; }
+
+.video-js {
+  width: 100% !important;
+  height: 4rem !important; }
+
+#media {
+  padding: 0.8rem 0; }
+  #media .mediaBox {
+    width: 100%;
+    padding: 0.4rem 0;
+    box-shadow: 0 0 2px 2px rgba(231, 231, 231, 0.5);
+    margin-bottom: 0.4rem; }
+  #media .mBLeft {
+    width: 20%; }
+    #media .mBLeft p {
+      text-align: right; }
+    #media .mBLeft .mpTitle {
+      color: #333333;
+      font-size: 0.3rem;
+      margin-top: 0.2rem; }
+    #media .mBLeft .mpContent {
+      color: #888888;
+      font-size: 0.24rem; }
+  #media .mBRight {
+    width: 70%;
+    margin-left: 5%; }
+    #media .mBRight .mrTitle {
+      font-size: 0.28rem;
+      text-align: center;
+      color: #a51e32;
+      margin-bottom: 0.15rem; }
+    #media .mBRight .mrContent {
+      font-size: 0.24rem;
+      color: #888888;
+      line-height: 0.36rem; }
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column; }
+  .page ul li {
+    float: left;
+    margin-right: 0.08rem; }
+    .page ul li a {
+      display: block;
+      width: 0.5rem;
+      height: 0.6rem;
+      background-color: white;
+      border: 1px solid #c8c8c8;
+      color: #888888;
+      font-size: 0.28rem;
+      line-height: 0.6rem;
+      text-align: center; }
+    .page ul li a.word {
+      width: 1.4rem; }
+    .page ul li .activePage {
+      background-color: #a51e32;
+      border-color: #a51e32;
+      color: white; }
+  .page ul li:nth-last-child(2) {
+    margin-right: 0; }
+
+#NewDetails {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 5; }
+  #NewDetails .newTop {
+    padding: 0.4rem 0 0.3rem;
+    border-bottom: 1px solid #c8c8c8; }
+    #NewDetails .newTop ul li:nth-child(1) {
+      font-size: 0.32rem;
+      line-height: 0.5rem;
+      font-weight: bold; }
+    #NewDetails .newTop ul li:nth-child(2) {
+      font-size: 0.24rem;
+      line-height: 0.5rem;
+      font-weight: bold; }
+      #NewDetails .newTop ul li:nth-child(2) p {
+        color: #888888; }
+        #NewDetails .newTop ul li:nth-child(2) p span:nth-child(1) {
+          text-indent: 0.35rem;
+          display: inline-block;
+          background: url(../img/newsTime.png) no-repeat 0rem 0.13rem;
+          background-size: auto 0.22rem; }
+        #NewDetails .newTop ul li:nth-child(2) p span:nth-child(2) {
+          text-indent: 0.62rem;
+          display: inline-block;
+          background: url(../img/eye.png) no-repeat 0.2rem 0.16rem;
+          background-size: auto 0.16rem; }
+  #NewDetails .newContent {
+    border-bottom: 1px solid #c8c8c8; }
+    #NewDetails .newContent p {
+      padding: 0.3rem 0;
+      font-size: 0.26rem;
+      color: #888888;
+      line-height: 0.5rem; }
+    #NewDetails .newContent img {
+      width: 100%;
+      padding: 0.2rem 0; }
+  #NewDetails .label .flabel {
+    margin-top: 0.4rem;
+    width: 15%;
+    font-size: 0.28rem;
+    line-height: 0.5rem;
+    color: #888888;
+    margin-left: 2%; }
+  #NewDetails .label .fp {
+    width: 80%; }
+    #NewDetails .label .fp a {
+      margin-top: 0.4rem;
+      float: left;
+      display: block;
+      line-height: 0.5rem;
+      padding: 0 0.2rem;
+      border-radius: 10px;
+      border: 1px solid #c8c8c8;
+      color: #888888;
+      font-size: 0.24rem;
+      margin-right: 0.1rem; }
+  #NewDetails .share .flshare {
+    margin-top: 0.3rem;
+    width: 15%;
+    font-size: 0.28rem;
+    line-height: 0.5rem;
+    color: #888888;
+    margin-left: 2%; }
+  #NewDetails .share .frshare {
+    width: 80%;
+    margin-top: 0.3rem; }
+    #NewDetails .share .frshare a {
+      float: left;
+      width: 0.5rem;
+      height: 0.5rem;
+      overflow: hidden;
+      border-radius: 50%;
+      background: url(../img/sharem.png) no-repeat left center;
+      background-size: auto 100%; }
 
 /*# sourceMappingURL=information.css.map */

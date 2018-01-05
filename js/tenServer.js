@@ -3,9 +3,9 @@ $(function(){
 	var myPlayer1 = videojs('my-video1');
 	videojs("my-video1").ready(function(){
 		var myPlayer = this;
-		$('.playv').click(function(){
+		$('.playVideo').click(function(){
 			myPlayer.play();
-			$('.playVideo').hide();
+			$(this).hide();
 		});
 	});
 	//开启滑动动画

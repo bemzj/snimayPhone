@@ -7,8 +7,10 @@
 		<meta content="yes" name="apple-mobile-web-app-capable"/>
 		<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
 		<meta content="telephone=no" name="format-detection"/>
+		
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/video-js.css" />
 		<link rel="stylesheet" href="css/information.css" />
 		<script type="text/javascript" src="js/rem.js" ></script>
 		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
@@ -42,7 +44,7 @@
 			<div class="clearl"></div>
 		</div>
 		<!--电子报刊-->
-		<div id="press" class="box">
+		<div id="press" class="box" style="display: none;">
 			<div class="pressBox" >
 				<div class="pressImg">
 					<img src="img/intro01.jpg" />
@@ -100,6 +102,117 @@
 				</div>
 			</div>
 		</div>
+		<!--视频中心-->
+		<div id="videoCenter" class="box" style="display: none;">
+			<div class="vcBox" >
+				<div class="vcImg">
+					<video id="my-video1" class="video-js" controls preload="auto" poster="img/intro03.jpg" data-setup="{}">
+						<source src="http://jq22com.qiniudn.com/jq22-sp.mp4" type="video/mp4"></source>
+					</video>
+					<div class="playVideo">
+						<img src="img/play.png" class="playv" />
+					</div>
+				</div>
+				<div class="vcTitle">
+					<p>诗尼曼全屋定制海清代言品牌形象片</p>
+				</div>
+				<div class="vcMessage">
+					<p>影视巨星海清代言诗尼曼家居绿色高端定制品</p>
+				</div>
+			</div>
+			<div class="vcBox" >
+				<div class="vcImg">
+					<video id="my-video2" class="video-js" controls preload="auto" poster="img/intro04.jpg" data-setup="{}">
+						<source src="http://jq22com.qiniudn.com/jq22-sp.mp4" type="video/mp4"></source>
+					</video>
+					<div class="playVideo">
+						<img src="img/play.png" class="playv" />
+					</div>
+				</div>
+				<div class="vcTitle">
+					<p>诗尼曼全屋定制海清代言品牌形象片</p>
+				</div>
+				<div class="vcMessage">
+					<p>影视巨星海清代言诗尼曼家居绿色高端定制品</p>
+				</div>
+			</div>
+		</div>
+		<!--媒体报道-->
+		<div id="media" class="box">
+			<div class="mediaList">
+				<div class="mediaBox">
+					<div class="mBLeft floatl">
+						<p class="mpTitle">10-26</p>
+						<p class="mpContent">2017</p>
+					</div>
+					<div class="mBRight floatl">
+						<p class="mrTitle p1">新手加盟全屋定制家具，这些注意事...</p>
+						<p class="mrContent p2">定制家具的火爆，从各大品牌转向全屋定制以及市场强大的需求令不少行外新手意欲加盟...</p>
+					</div>
+					<div class="clearl"></div>
+				</div>
+				<div class="mediaBox">
+					<div class="mBLeft floatl">
+						<p class="mpTitle">10-26</p>
+						<p class="mpContent">2017</p>
+					</div>
+					<div class="mBRight floatl">
+						<p class="mrTitle p1">新手加盟全屋定制家具，这些注意事...</p>
+						<p class="mrContent p2">定制家具的火爆，从各大品牌转向全屋定制以及市场强大的需求令不少行外新手意欲加盟...</p>
+					</div>
+					<div class="clearl"></div>
+				</div>
+				<div class="mediaBox">
+					<div class="mBLeft floatl">
+						<p class="mpTitle">10-26</p>
+						<p class="mpContent">2017</p>
+					</div>
+					<div class="mBRight floatl">
+						<p class="mrTitle p1">新手加盟全屋定制家具，这些注意事...</p>
+						<p class="mrContent p2">定制家具的火爆，从各大品牌转向全屋定制以及市场强大的需求令不少行外新手意欲加盟...</p>
+					</div>
+					<div class="clearl"></div>
+				</div>
+				<div class="mediaBox">
+					<div class="mBLeft floatl">
+						<p class="mpTitle">10-26</p>
+						<p class="mpContent">2017</p>
+					</div>
+					<div class="mBRight floatl">
+						<p class="mrTitle p1">新手加盟全屋定制家具，这些注意事...</p>
+						<p class="mrContent p2">定制家具的火爆，从各大品牌转向全屋定制以及市场强大的需求令不少行外新手意欲加盟...</p>
+					</div>
+					<div class="clearl"></div>
+				</div>
+				<div class="page">
+					 <ul>
+					 	<li>
+					 		<a href="###" class="activePage">1</a>
+					 	</li>
+					 	<li>
+					 		<a href="###">2</a>
+					 	</li>
+					 	<li>
+					 		<a href="###">3</a>
+					 	</li>
+					 	<li>
+					 		<a href="###">4</a>
+					 	</li>
+					 	<li>
+					 		<a href="###">5</a>
+					 	</li>
+					 	<li>
+					 		<a href="###" class="word">下一页</a>
+					 	</li>
+					 	<li>
+					 		<a href="###" class="word">最后一页</a>
+					 	</li>
+					 	 <div class="clearl"></div>
+					 </ul>
+					
+				</div>
+			</div>
+		</div>
 		<!--详情-->
 		<div id="details">
 			<nav>
@@ -124,7 +237,63 @@
 					</div>
 					<div class="clearBoth"></div>
 				</div>
+			</div>	
+		</div>
+		<!--详情-->
+		<div id="NewDetails">
+			<nav>
+				<div class="navBox box">
+					<a class="rNavBtn closeNewDetails"><img src="img/return.png"/></a>
+					<p>入户空间</p>					
+				</div>
+			</nav>
+			<div class="newTop box">
+				<ul>
+					<li>
+						<p>新手加盟全屋定制家具，这些注意事项不能忽视</p>
+					</li>
+					<li>
+						<p><span>2017-11-20</span><span>148</span></p>
+					</li>
+				</ul>
 			</div>
+			<div class="newContent box">
+				<p>定制家具的火爆，从各大品牌转向全屋定制以及市场强大的需求令不少行外新手意欲加盟。作为门外汉来说，行业的整体趋势利好意味着加盟有望分享市场蛋糕，而经验不足则成为新手加盟商的一大难题。想要加盟定制家居品牌，这些注意事项一定不能忽视。</p>
+				<img src="img/intro06.jpg" />
+				<p>首先，加盟一家全屋定制品牌，其品牌影响力已经成为影响顾客选择的重要因素。无论是线下实体门店，随处可见的品牌广告宣传，无时无刻都在加深消费者对品牌的印象。品牌影响力往往和品牌资本、技术、管理等息息相关。如果一个品牌资金力量雄厚，其对品牌广告的投入相应也会增加，从而消费者购买选择印象也会大有提升。作为定制家具企业，技术研发和生产实力也是品牌影响力的表现之一。以消费者需求为导向，满足消费者的个性化需求和实际需要，保证良好的产品研发能力，这样才能长久在市场中保持良好竞争力。</p>
+			</div>
+			<div class="label box">
+				<div class="floatl flabel">
+					<p>标签：</p>
+				</div>
+				<div class="floatl fp">
+					<a href="###">诗尼曼黄伟国</a>
+					<a href="###">3月博览会</a>
+					<div class="clearl"></div>
+				</div>
+				<div class="clearl"></div>
+			</div>
+			<div class="share box">
+				<div class="floatl flshare">
+					<p>分享：</p>
+				</div>
+				<div class="floatl frshare">
+					<a href="###"></a>
+					<div class="clearl"></div>
+				</div>
+				<div class="clearl"></div>
+			</div>
+			<div class="box paper">
+				<div class="choice2 pn">
+					<div class="floatl flr">
+						<button>上一篇</button>
+					</div>
+					<div class="floatr flr">
+						<button>下一篇</button>
+					</div>
+					<div class="clearBoth"></div>
+				</div>
+			</div>	
 			
 		</div>
 		<!--尾部-->
@@ -194,9 +363,10 @@
 				<p>Copyright©2017粤ICP备14016448号</p>
 			</div>
 		</footer>
+		
 		<script type="text/javascript" src="js/pinchzoom.min.js" ></script>
-		<script src="https://cdn.bootcss.com/touchjs/0.2.14/touch.min.js"></script>
 		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/video.min.js" ></script>
 		<script type="text/javascript" src="js/intromation.js" ></script>
 	</body>
 </html>
