@@ -1,0 +1,331 @@
+$color8:#888888;
+$colorc8:#c8c8c8;
+$coloree:#eeeeee;
+$colore4:#e4e4e4;
+$black:#333333;
+$red:#a51e32;
+body{
+    background-color: white;
+}
+#contact{
+    padding: 0.8rem 0 0.6rem;
+    .threePart{
+        .titles{
+            margin-bottom: 0.6rem;
+        }
+        ul li:nth-child(2) .tpBox{
+            background-color: white;
+        }
+        ul li:nth-child(1) .tpBox .tpLeft .tpImg{
+            background-image:url(../img/message.png);
+        }
+        ul li:nth-child(3) .tpBox .tpLeft .tpImg{
+            background-image:url(../img/onlineContact.png);
+        }
+    }
+    .tpBox{
+        padding: 0.5rem 0;
+        background-color: #f6f6f6;
+        position: relative;
+        .hand{
+            position: absolute;
+            width:0.5rem;
+            top: 110%;
+            left: 50%;
+            margin-left: -0.25rem;
+            z-index: 5;
+            animation: 0.8s hand linear infinite;
+        }
+        .tpLeft{
+            width: 25%;
+            .tpImg{
+                height: 0.5rem;
+                background: url(../img/serverPhone0.png) no-repeat center center;
+                background-size: auto 100%;
+            }
+            .tpp{
+                margin-top: 0.2rem;
+                font-size: 0.28rem;
+                line-height: 0.3rem;
+                text-align: center;
+                color: $black;
+            }
+        }
+        .tpRight{
+            width: 70%;
+            span{
+                display: block;
+                width: 0.6rem;
+                margin-top: 0.05rem;
+                margin-bottom: 0.15rem;
+                border-bottom: 1px solid $red;
+            }
+            p{
+                font-size: 0.26rem;
+                line-height: 0.45rem;
+                color: $color8;
+                a{
+                    display: inline-block;
+                    
+                    color:$red;
+                    position: relative;
+                }
+                a::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0.05rem;
+                    left: 0px;
+                    width: 100%;
+                    border-bottom: 1px solid $red;
+                }
+            }
+            button{
+                margin-top: 0.1rem;
+                display: block;
+                font-size: 0.28rem;
+                color: $red;
+                padding: 0.1rem 0.2rem;
+                border: 1px solid $colorc8;
+                background-color: transparent;
+            }
+        }
+    }
+}
+@keyframes hand{
+    from{
+        top: 90%;
+        opacity: 1;
+    }
+    to{
+        top: 50%;
+        opacity: 0;
+    }
+}
+@-moz-keyframes hand{
+    from{
+        top: 90%;
+        opacity: 1;
+    }
+    to{
+        top: 50%;
+        opacity: 0;
+    }
+}
+@-webkit-keyframes hand{
+    from{
+        top: 90%;
+        opacity: 1;
+    }
+    to{
+        top: 50%;
+        opacity: 0;
+    }
+}
+@-ms-keyframes hand{
+    from{
+        top: 90%;
+        opacity: 1;
+    }
+    to{
+        top: 50%;
+        opacity: 0;
+    }
+}
+#mapBox{
+    .titles{
+        padding: 0.8rem 0 0.6rem 0;
+    }
+    #companyMap{
+        width: 100%;
+        height: 4.02rem;
+    }
+    .messageBox{
+        width: 100%;
+        ul{
+            width: 94%;
+            margin: 0 auto;
+            margin-top: 0.2rem;
+            padding: 0.2rem 0;
+            border-bottom: 1px solid #e3e3e3;
+            li{
+               background: url(../img/cicon01.png) no-repeat 0.12rem center;
+               background-size: auto 0.28rem;
+            }
+            li:nth-child(2){
+                background-image: url(../img/cicon02.png);
+            }
+            li:nth-child(3){
+                background-image: url(../img/cicon03.png);
+                background-size: auto 0.24rem;
+            }
+            li:nth-child(4){
+                background-image: url(../img/cicon04.png);
+                background-size: auto 0.26rem;
+            }
+            li:nth-child(5){
+                background-image: url(../img/cicon05.png);
+                background-position-x: 0.22rem;
+            }
+            p{
+               font-size: 0.24rem; 
+               line-height: 0.6rem;
+               color: $black;
+               margin-left: 0.5rem;
+            }
+            a{
+                display: inline-block;
+                color: $black;
+                margin-right: 0.1rem;
+            }
+            
+        }
+        ul:nth-child(2){
+            margin-top: 0rem;
+            border: 0;
+            padding-bottom: 0;
+        }
+    }
+}
+#popWinJoin{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column;
+    overflow: hidden;
+    .jobPop{
+        position: relative;
+        >img{
+            width: 100%;
+        }
+        .redClose{
+            width:0.32rem;
+            position: absolute;
+            top: 0.6rem;
+            right: 10%;
+            z-index: 5;
+            img{
+                width: 100%;
+            }
+        }
+        .getJob{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            .titles{
+                margin-top: 0.8rem;
+                margin-bottom: 0.4rem;
+            }
+            .joberMessage{
+                ul li{
+                    width: 75%;
+                    margin: 0 auto;
+                    height: 0.8rem;
+                    border: 1px solid $colorc8;
+                    margin-top: 0.2rem;
+                    background: url(../img/JobPhone.png) no-repeat 0.2rem center;
+                    background-size: auto 0.3rem;
+                    overflow: hidden;
+                    input{
+                        width: 80%;
+                        height: 100%;
+                        border: 0;
+                        display: block;
+                        color: $black;
+                        margin-left: 15%;
+                        margin-top: 1px;
+                        font-size: 0.28rem;
+                    }
+                    input::-moz-placeholder{
+                        color: $color8;
+                        font-size: 0.28rem;
+                    }
+                    input::-ms-input-placeholder{
+                        color: $color8;
+                        font-size: 0.28rem;
+                    }
+                    input::-webkit-input-placeholder{
+                        color: $color8;
+                        font-size: 0.28rem;
+                    }
+                    
+                }
+                ul li:nth-child(1){
+                    background-image: url(../img/name.png);
+                }
+                ul li:nth-child(3){
+                    position: relative;
+                    background-image: url(../img/addressPng.png);
+                    img{
+                        position: absolute;
+                        top: 0.3rem;
+                        right: 0.2rem;
+                        height: 0.3rem;
+                    }
+                }
+            }
+            .joinType{
+                ul li{
+                    width:75%;
+                    margin: 0 auto;
+                    p{
+                        width: 80%;
+                        margin-left: 10%;
+                        font-size: 0.28rem;
+                        line-height: 0.5rem;
+                        color: $color8;
+                        margin-bottom: 0.1rem;
+                    }
+                    .typeBox{
+                        margin-bottom: 0.4rem;
+                        .floatl{
+                            width: 23.5%;
+                            margin-right: 2%;
+                            button{
+                                width: 100%;
+                                font-size: 0.26rem;
+                                height: 0.7rem;
+                                background-color: #eeeeee;
+                                border: 1px solid $colorc8;
+                                color: $color8;
+                            }
+                            .tyBtn{
+                                background-color: $red;
+                                color: white;
+                                border-color: $red;
+                            }
+                        }
+                        .floatl:nth-last-child(2){
+                            margin-right: 0%;
+                        }
+                    }
+                }
+                ul li:nth-child(1){
+                    background: url(../img/type.png) no-repeat left center;
+                    background-size: auto 0.3rem;
+                }
+            }
+            .submitBtn{
+                width: 75%;
+                margin: 0 auto;
+                border: 1px solid $red;
+                margin-top: 0.45rem;
+                button{
+                    border: 1px solid $red;
+                }
+            }
+        }
+    }
+}

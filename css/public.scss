@@ -12,6 +12,10 @@ $red:#a51e32;
 footer{
     background-color: $coloree;
 }
+body{
+    overflow-x: hidden;
+    background-color: white;
+}
 .moreLink{
     padding: 0.2rem 0;
     display: flex;
@@ -58,7 +62,7 @@ footer{
             margin: 0 auto;
             overflow: hidden;
             border-radius: 50%;
-            background-color: white;
+            background-color:$coloree;
             img{
                 display: block;
                 width: 50%;
@@ -223,5 +227,78 @@ nav{
                 height: 100%;
             }
         }
+    }
+}
+#popWindows{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column;
+    overflow: hidden;
+    .popBoxes{
+        position: relative;
+        >img{
+            width: 100%;
+        }
+        .redClosed{
+            width:0.32rem;
+            position: absolute;
+            top: 0.6rem;
+            right: 10%;
+            z-index: 5;
+            img{
+                width: 100%;
+            }
+        }
+        .mesBox{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            .titles{
+                margin-top: 0.8rem;
+                margin-bottom: 0.4rem;
+            }
+            .closeTip{
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                color: $red;
+                font-size: 0.24rem;
+                bottom: 15%;
+            }
+            .contentTip{
+                height: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                display: -webkit-flex;
+                -webkit-align-items: center;
+                -webkit-justify-content: center;
+                -webkit-flex-direction: column;
+                p{
+                    width: 75%;
+                    margin: 0 auto;
+                    font-size: 0.28rem;
+                    color: $black;
+                    text-align: center;
+                    line-height: 0.5rem;
+                }
+            }
+        }
+        
     }
 }

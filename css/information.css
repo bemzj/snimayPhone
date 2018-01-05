@@ -1,0 +1,144 @@
+#fourChoice {
+  margin-top: 1px; }
+  #fourChoice .floatl {
+    width: 24.5%;
+    margin-right: 0.67%; }
+    #fourChoice .floatl button {
+      width: 100%;
+      display: block;
+      height: 0.7rem;
+      background-color: #eeeeee;
+      border: 1px solid #c8c8c8;
+      color: #888888; }
+    #fourChoice .floatl .fbtn {
+      background-color: #a51e32;
+      color: white;
+      border-color: #a51e32; }
+  #fourChoice .floatl:nth-last-child(2) {
+    margin-right: 0%; }
+
+#press {
+  padding: 0.6rem 0 0.8rem; }
+  #press .pressBox {
+    border: 1px solid #c8c8c8;
+    margin-bottom: 0.4rem; }
+    #press .pressBox .pressImg {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 0.3rem;
+      position: relative; }
+      #press .pressBox .pressImg > img {
+        width: 100%; }
+      #press .pressBox .pressImg .cross {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: -webkit-flex;
+        -webkit-align-items: center;
+        -webkit-justify-content: center;
+        -webkit-flex-direction: column; }
+        #press .pressBox .pressImg .cross img {
+          width: 0.4rem; }
+    #press .pressBox .pressTitle {
+      font-size: 0.32rem;
+      text-align: center;
+      line-height: 0.5rem;
+      color: #888888;
+      margin-top: 0.25rem; }
+      #press .pressBox .pressTitle p {
+        width: 90%;
+        margin: 0 auto; }
+    #press .pressBox .pressMessage {
+      color: #c8c8c8;
+      text-align: center;
+      font-size: 0.28rem;
+      line-height: 0.5rem;
+      margin-bottom: 0.2rem; }
+      #press .pressBox .pressMessage p {
+        width: 90%;
+        margin: 0 auto; }
+  #press .pressBox:nth-last-child(1) {
+    margin-bottom: 0; }
+
+#details {
+  position: fixed;
+  top: 0%;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: none;
+  z-index: 5; }
+  #details nav {
+    background-color: #f6f6f6;
+    box-shadow: 0 0 2px 2px rgba(51, 51, 51, 0.1);
+    position: relative; }
+  #details .paper {
+    padding: 0.4rem 0; }
+  #details .paperBox {
+    position: relative; }
+    #details .paperBox .handbox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      display: -webkit-flex;
+      -webkit-align-items: center;
+      -webkit-justify-content: center;
+      -webkit-flex-direction: column; }
+      #details .paperBox .handbox img {
+        width: 0.8rem; }
+    #details .paperBox > img {
+      width: 100%; }
+  #details .choice2 {
+    margin-top: 0.4rem; }
+    #details .choice2 > .flr {
+      width: 48%;
+      position: relative;
+      border: 1px solid #c8c8c8;
+      background-color: #eeeeee; }
+      #details .choice2 > .flr > p {
+        line-height: 0.8rem;
+        font-size: 0.28rem;
+        color: #333333;
+        text-indent: 0.28rem;
+        background: url(../img/rArrow.png) no-repeat 92% center;
+        background-size: auto 0.34rem; }
+      #details .choice2 > .flr button {
+        display: block;
+        height: 0.8rem;
+        font-size: 0.28rem;
+        color: #888888;
+        background-size: auto 0.34rem;
+        width: 100%;
+        background-color: #eeeeee; }
+      #details .choice2 > .flr > select {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 2; }
+    #details .choice2 > .floatl {
+      margin-left: -1px; }
+      #details .choice2 > .floatl button {
+        background-color: white; }
+    #details .choice2 > .floatr {
+      margin-right: -1px; }
+
+/*# sourceMappingURL=information.css.map */

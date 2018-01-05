@@ -1,0 +1,141 @@
+$color8:#888888;
+$colorc8:#c8c8c8;
+$coloree:#eeeeee;
+$colore4:#e4e4e4;
+$black:#333333;
+$red:#a51e32;
+#problem{
+    padding: 0.8rem 0;
+    .threeChoice{
+        width: 100%;
+        margin-top: 0.6rem;
+        .floatl{
+            width: 32.8%;
+            margin-right: 0.8%;
+            button{
+                display: block;
+                width: 100%;
+                height: 0.8rem;
+                background-color: $coloree;
+                border: 1px solid $colorc8;
+                font-size: 0.3rem;
+            }
+            .redBtn{
+                background-color: $red;
+                border-color: $red;
+                color: white;
+            }
+        }
+        .floatl:nth-last-child(2){
+            margin-right: 0%;
+        }
+    }
+    .problem{
+        width: 92%;
+        margin: 0 auto;
+        .select{
+            margin: 0.3rem 0;
+            width: 100%;
+            border: 1px solid $colorc8;
+            height: 0.8rem;
+            position: relative;
+            p{
+                width: 92%;
+                font-size: 0.28rem;
+                line-height: 0.8rem;
+                margin: 0 auto;
+                color: $color8;
+                background: url(../img/rArrow.png) no-repeat right center;
+                background-size: auto 0.34rem;
+                span:nth-child(1){
+                    color: $red;
+                }
+            }
+            select{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+            }
+        }
+        .input{
+            width: 100%;
+            border: 1px solid $colorc8;
+            height: 0.8rem;
+            margin-bottom: 0.3rem;
+            position: relative;
+            input{
+                display: block;
+                width: 64%;
+                margin-left: 31%;
+                height: 100%;
+                border: 0;
+                font-size: 0.28rem;
+                color: $color8;
+            }
+            p{
+                position: absolute;
+                top: 0;
+                left: 0;
+                line-height: 0.8rem;
+                font-size: 0.28rem;
+                margin-left: 4%;
+                color: $color8;
+                span{
+                    color: $red;
+                }
+            }
+        }
+        .textarea{
+            width: 100%;
+            height: 1.7rem;
+            padding: 0.2rem 0 0.2rem;
+            border: 1px solid $colorc8;
+            position: relative;
+            margin-bottom: 0.3rem;
+            p{
+                position: absolute;
+                top: 0;
+                left: 0;
+                line-height: 0.8rem;
+                font-size: 0.28rem;
+                margin-left: 4%;
+                color: $color8;
+                span{
+                    color: $red;
+                }
+            }
+            textarea{
+                width: 66%;
+                margin-left: 31%;
+                height: 100%;
+                line-height: 0.4rem;
+                border: 0;
+                color: $color8;
+                font-size: 0.28rem;
+            }
+        }
+        .fileup input{
+            margin-top: 0.15rem;
+            line-height: 0.5rem;
+        }
+        .suggestion{
+            margin-top: 0.3rem;
+        }
+        .sbtn{
+            width: 65%;           
+            margin: 0 auto;
+            padding-top: 0.2rem;
+            button{
+                display: block;
+                width: 100%;
+                height: 0.8rem;
+                background-color: $red;
+                color: white;
+                font-size: 0.3rem;
+            }
+        }
+    }
+}
