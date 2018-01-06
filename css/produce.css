@@ -1,0 +1,144 @@
+#banner > img {
+  width: 100%; }
+#banner .swiperBox {
+  width: 100%;
+  position: relative;
+  margin: 0.2rem auto; }
+  #banner .swiperBox .swiper-container-pro {
+    width: 80%;
+    margin: 0 auto; }
+#banner .swiper-slide {
+  width: 30%; }
+  #banner .swiper-slide img {
+    width: 100%; }
+#banner .swiper-button-prev {
+  background-image: url(../img/leftb.png);
+  width: 0.24rem;
+  height: 0.4rem;
+  padding: 0 0.2rem;
+  top: 50%;
+  margin-top: -0.2rem;
+  background-size: 0.24rem 0.4rem;
+  left: 0px; }
+#banner .swiper-button-next {
+  background-image: url(../img/rightb.png);
+  width: 0.24rem;
+  height: 0.4rem;
+  padding: 0 0.2rem;
+  top: 50%;
+  margin-top: -0.2rem;
+  background-size: 0.24rem 0.4rem;
+  right: 0px; }
+
+#details {
+  padding-top: 0.4rem; }
+  #details .titles ul li:nth-child(1) p {
+    text-align: left;
+    font-weight: bold; }
+  #details .titles ul li:nth-child(2) p {
+    text-align: left; }
+  #details .titles ul li:nth-child(3) span {
+    margin-left: 0px;
+    margin-bottom: 0.2rem; }
+  #details .titles ul li:nth-child(4) p {
+    font-size: 0.26rem;
+    color: #888888;
+    line-height: 0.5rem; }
+  #details .titles {
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #c8c8c8; }
+  #details .detailBox {
+    width: 100%;
+    position: relative;
+    margin-top: 0.2rem; }
+    #details .detailBox .dbContent {
+      width: 84%;
+      margin-left: 16%; }
+      #details .detailBox .dbContent a {
+        line-height: 0.6rem;
+        font-size: 0.26rem;
+        padding: 0 0.15rem;
+        border: 1px solid #c8c8c8;
+        border-radius: 10px;
+        color: #888888;
+        margin-right: 0.1rem; }
+      #details .detailBox .dbContent a:nth-last-child(2) {
+        margin-right: 0; }
+      #details .detailBox .dbContent a.img {
+        height: 0.6rem;
+        padding: 0;
+        border: 0; }
+        #details .detailBox .dbContent a.img img {
+          height: 100%; }
+    #details .detailBox p {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 0.28rem;
+      line-height: 0.6rem;
+      color: #888888;
+      text-indent: 0.2rem; }
+  #details .detailBox2 {
+    width: 100%;
+    position: relative;
+    margin-top: 0.2rem; }
+    #details .detailBox2 .dbContent2 {
+      width: 75%;
+      margin-left: 25%; }
+      #details .detailBox2 .dbContent2 a {
+        line-height: 0.6rem;
+        font-size: 0.26rem;
+        padding: 0 0.2rem;
+        border: 1px solid #c8c8c8;
+        color: #888888;
+        margin-right: 0.1rem; }
+      #details .detailBox2 .dbContent2 a:nth-last-child(2) {
+        margin-right: 0; }
+    #details .detailBox2 p {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 0.28rem;
+      line-height: 0.6rem;
+      color: #888888;
+      text-indent: 0.2rem; }
+  #details .rbtn {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    margin-bottom: 0.4rem; }
+    #details .rbtn button {
+      height: 0.8rem; }
+  #details .detailBox0 {
+    margin-top: 0.4rem; }
+
+#produceDetails {
+  padding: 0.8rem 0; }
+
+#tenServer {
+  padding-bottom: 0.8rem; }
+  #tenServer .tenBox {
+    width: 100%; }
+    #tenServer .tenBox img {
+      width: 100%; }
+  #tenServer .tenIntro .floatl {
+    width: 47%;
+    background-color: #F6F6F6;
+    margin-top: 0.4rem;
+    padding: 0.3rem 0 0.4rem; }
+    #tenServer .tenIntro .floatl .tImg {
+      width: 44%;
+      margin: 0 auto; }
+    #tenServer .tenIntro .floatl .tTitle {
+      text-align: center;
+      font-size: 0.3rem;
+      font-weight: bold;
+      margin-top: 0.15rem; }
+    #tenServer .tenIntro .floatl .tP {
+      text-align: center;
+      font-size: 0.24rem;
+      color: #888888; }
+  #tenServer .tenIntro .floatl:nth-child(2n+1) {
+    margin-right: 6%; }
+
+/*# sourceMappingURL=produce.css.map */

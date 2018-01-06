@@ -32,10 +32,18 @@ $red:#a51e32;
             
         }
     }
+    .titles{
+        margin-top: 0.6rem;
+    }
     .roomlist{
-        padding: 0.6rem 0;
+        overflow: hidden;
+        padding: 0.2rem 0  0;
+        
         .roomChild{
             display: block;
+            padding-bottom: 0.4rem;
+            padding-top: 0.4rem;
+            border-bottom: 1px solid $colorc8;
             .clLeft{
                 width: 38%;
                 img{
@@ -46,13 +54,124 @@ $red:#a51e32;
                 width: 57%;
                 margin-left: 4%;
                 .clTitle{
-                    font-size: 0.28rem;
+                    font-size: 0.26rem;
                     color: $black;
                 }
                 .clContent{
-                    font-size: 0.26rem;
+                    font-size: 0.24rem;
+                    line-height: 0.45rem;
                     color: $color8;
                 }
+                .labelBoxOut{
+                    overflow-x: scroll;
+                    margin-top: 0.05rem;
+                    .labelBox{
+                        .labels{
+                            margin-right: 2px;
+                            line-height: 18px;
+                            padding: 1px 8px 0;
+                            border: 1px solid $colorc8;
+                            color: $color8;
+                            font-size: 12px;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .knowMore{
+        width: 40%;
+        margin: 0.4rem auto;
+        button{
+            display: block;
+            width: 100%;
+            height: 0.7rem;
+            color: white;
+            background-color: $red;
+        }
+    }
+    .orderMessage{
+        background-color: $coloree;
+        padding-bottom: 0.6rem;
+        margin-top: 0.4rem;
+        .omImg{
+            width: 100%;
+            position: relative;
+            img{
+                width: 100%;
+            }
+            .omp{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                display: -webkit-flex;
+                -webkit-align-items: center;
+                -webkit-justify-content: center;
+                -webkit-flex-direction: column;
+                p{
+                    font-size: 0.3rem;
+                    color: white;
+                }
+            }
+        }
+        .messageWrite{
+            margin-top: 0.6rem;
+            ul li{
+                width: 83%;
+                margin: 0 auto;
+                border: 1px solid $colorc8;
+                background: url(../img/person.png) no-repeat 0.2rem center;
+                background-size: auto 0.3rem;
+                background-color: white;
+                margin-bottom: 0.4rem;
+                input{
+                    border: 0;
+                    width: 80%;
+                    margin-left: 14%;
+                    height: 0.8rem;
+                    line-height: 0.8rem;
+                    color: $black;
+                    font-size: 0.28rem;
+                    display: block;
+                }
+                input::-moz-placeholder{
+                    color: $color8;
+                    font-size: 0.28rem;
+                }
+                input::-ms-input-placeholder{
+                    color: $color8;
+                    font-size: 0.28rem;
+                }
+                input::-webkit-input-placeholder{
+                    color: $color8;
+                    font-size: 0.28rem;
+                }
+            }
+            ul li:nth-child(2){
+                background-image:url(../img/cicon02.png);
+            }
+            ul li:nth-child(3){
+                background-image:url(../img/cicon01.png);
+                input{
+                    width: 80%;
+                    background:url(../img/rArrow.png) no-repeat right center;
+                    background-size: auto 0.3rem;
+                }
+            }
+        }
+        .submitBox{
+            width: 83%;
+            margin: 0 auto;
+            button{
+                height: 0.8rem;
+                font-size: 0.3rem;
             }
         }
     }
@@ -65,14 +184,36 @@ $red:#a51e32;
     background: url(../img/search.png) no-repeat 0.2rem center;
     background-size: auto 0.32rem;
     overflow: hidden;
-    margin-bottom: 0.6rem;
+    position: relative;
     input {
         display: block;
-        width: 85%;
+        width: 72%;//72
         border: 0;
         height: 100%;
         margin-left: 12%;
         margin-top: 1px;
         color: $black;
+    }
+    .closeSearch{
+        display: none;
+        position: absolute;
+        top: 0.1rem;
+        right: 15%;
+        width: 0.6rem;
+        height: 0.6rem;
+        img{
+           width: 40%;
+           margin: 30%; 
+        }
+        
+    }
+    .findBtn{
+        position: absolute;
+        top: 0;
+        padding: 0 0.2rem 0 0;
+        right: 0.1rem;
+        line-height: 0.8rem;
+        font-size: 0.28rem;
+        color: $red;
     }
 }

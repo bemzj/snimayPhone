@@ -18,10 +18,16 @@
         border-color: #a51e32; }
     #center .selectBoxOut .selectBox .selectChild:nth-last-child(2) {
       margin-right: 0; }
+  #center .titles {
+    margin-top: 0.6rem; }
   #center .roomlist {
-    padding: 0.6rem 0; }
+    overflow: hidden;
+    padding: 0.2rem 0  0; }
     #center .roomlist .roomChild {
-      display: block; }
+      display: block;
+      padding-bottom: 0.4rem;
+      padding-top: 0.4rem;
+      border-bottom: 1px solid #c8c8c8; }
       #center .roomlist .roomChild .clLeft {
         width: 38%; }
         #center .roomlist .roomChild .clLeft img {
@@ -30,11 +36,100 @@
         width: 57%;
         margin-left: 4%; }
         #center .roomlist .roomChild .clRight .clTitle {
-          font-size: 0.28rem;
+          font-size: 0.26rem;
           color: #333333; }
         #center .roomlist .roomChild .clRight .clContent {
-          font-size: 0.26rem;
+          font-size: 0.24rem;
+          line-height: 0.45rem;
           color: #888888; }
+        #center .roomlist .roomChild .clRight .labelBoxOut {
+          overflow-x: scroll;
+          margin-top: 0.05rem; }
+          #center .roomlist .roomChild .clRight .labelBoxOut .labelBox .labels {
+            margin-right: 2px;
+            line-height: 18px;
+            padding: 1px 8px 0;
+            border: 1px solid #c8c8c8;
+            color: #888888;
+            font-size: 12px;
+            border-radius: 10px; }
+  #center .knowMore {
+    width: 40%;
+    margin: 0.4rem auto; }
+    #center .knowMore button {
+      display: block;
+      width: 100%;
+      height: 0.7rem;
+      color: white;
+      background-color: #a51e32; }
+  #center .orderMessage {
+    background-color: #eeeeee;
+    padding-bottom: 0.6rem;
+    margin-top: 0.4rem; }
+    #center .orderMessage .omImg {
+      width: 100%;
+      position: relative; }
+      #center .orderMessage .omImg img {
+        width: 100%; }
+      #center .orderMessage .omImg .omp {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: -webkit-flex;
+        -webkit-align-items: center;
+        -webkit-justify-content: center;
+        -webkit-flex-direction: column; }
+        #center .orderMessage .omImg .omp p {
+          font-size: 0.3rem;
+          color: white; }
+    #center .orderMessage .messageWrite {
+      margin-top: 0.6rem; }
+      #center .orderMessage .messageWrite ul li {
+        width: 83%;
+        margin: 0 auto;
+        border: 1px solid #c8c8c8;
+        background: url(../img/person.png) no-repeat 0.2rem center;
+        background-size: auto 0.3rem;
+        background-color: white;
+        margin-bottom: 0.4rem; }
+        #center .orderMessage .messageWrite ul li input {
+          border: 0;
+          width: 80%;
+          margin-left: 14%;
+          height: 0.8rem;
+          line-height: 0.8rem;
+          color: #333333;
+          font-size: 0.28rem;
+          display: block; }
+        #center .orderMessage .messageWrite ul li input::-moz-placeholder {
+          color: #888888;
+          font-size: 0.28rem; }
+        #center .orderMessage .messageWrite ul li input::-ms-input-placeholder {
+          color: #888888;
+          font-size: 0.28rem; }
+        #center .orderMessage .messageWrite ul li input::-webkit-input-placeholder {
+          color: #888888;
+          font-size: 0.28rem; }
+      #center .orderMessage .messageWrite ul li:nth-child(2) {
+        background-image: url(../img/cicon02.png); }
+      #center .orderMessage .messageWrite ul li:nth-child(3) {
+        background-image: url(../img/cicon01.png); }
+        #center .orderMessage .messageWrite ul li:nth-child(3) input {
+          width: 80%;
+          background: url(../img/rArrow.png) no-repeat right center;
+          background-size: auto 0.3rem; }
+    #center .orderMessage .submitBox {
+      width: 83%;
+      margin: 0 auto; }
+      #center .orderMessage .submitBox button {
+        height: 0.8rem;
+        font-size: 0.3rem; }
 
 .searchBox {
   width: 100%;
@@ -44,14 +139,32 @@
   background: url(../img/search.png) no-repeat 0.2rem center;
   background-size: auto 0.32rem;
   overflow: hidden;
-  margin-bottom: 0.6rem; }
+  position: relative; }
   .searchBox input {
     display: block;
-    width: 85%;
+    width: 72%;
     border: 0;
     height: 100%;
     margin-left: 12%;
     margin-top: 1px;
     color: #333333; }
+  .searchBox .closeSearch {
+    display: none;
+    position: absolute;
+    top: 0.1rem;
+    right: 15%;
+    width: 0.6rem;
+    height: 0.6rem; }
+    .searchBox .closeSearch img {
+      width: 40%;
+      margin: 30%; }
+  .searchBox .findBtn {
+    position: absolute;
+    top: 0;
+    padding: 0 0.2rem 0 0;
+    right: 0.1rem;
+    line-height: 0.8rem;
+    font-size: 0.28rem;
+    color: #a51e32; }
 
 /*# sourceMappingURL=center.css.map */

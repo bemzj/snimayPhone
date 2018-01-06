@@ -196,7 +196,7 @@ $red:#a51e32;
     .pn{
         margin-top: 0.8rem;
     }
-    .searchBox{
+    .searchBox {
         width: 100%;
         border: 1px solid $colorc8;
         height: 0.8rem;
@@ -204,14 +204,38 @@ $red:#a51e32;
         background: url(../img/search.png) no-repeat 0.2rem center;
         background-size: auto 0.32rem;
         overflow: hidden;
+        position: relative;
         margin-top: 0.2rem;
-        input{
+        input {
             display: block;
-            width: 85%;
+            width: 72%;//72
             border: 0;
             height: 100%;
             margin-left: 12%;
             margin-top: 1px;
+            color: $black;
+        }
+        .closeSearch{
+            display: none;
+            position: absolute;
+            top: 0.1rem;
+            right: 15%;
+            width: 0.6rem;
+            height: 0.6rem;
+            img{
+               width: 40%;
+               margin: 30%; 
+            }
+            
+        }
+        .findBtn{
+            position: absolute;
+            top: 0;
+            padding: 0 0.2rem 0 0;
+            right: 0.1rem;
+            line-height: 0.8rem;
+            font-size: 0.28rem;
+            color: $red;
         }
     }
     .storeChild{

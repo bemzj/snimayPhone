@@ -161,14 +161,34 @@
     background: url(../img/search.png) no-repeat 0.2rem center;
     background-size: auto 0.32rem;
     overflow: hidden;
+    position: relative;
     margin-top: 0.2rem; }
     #net .searchBox input {
       display: block;
-      width: 85%;
+      width: 72%;
       border: 0;
       height: 100%;
       margin-left: 12%;
-      margin-top: 1px; }
+      margin-top: 1px;
+      color: #333333; }
+    #net .searchBox .closeSearch {
+      display: none;
+      position: absolute;
+      top: 0.1rem;
+      right: 15%;
+      width: 0.6rem;
+      height: 0.6rem; }
+      #net .searchBox .closeSearch img {
+        width: 40%;
+        margin: 30%; }
+    #net .searchBox .findBtn {
+      position: absolute;
+      top: 0;
+      padding: 0 0.2rem 0 0;
+      right: 0.1rem;
+      line-height: 0.8rem;
+      font-size: 0.28rem;
+      color: #a51e32; }
   #net .storeChild {
     width: 100%;
     margin-left: -1px;

@@ -1,0 +1,155 @@
+$color8:#888888;
+$colorc8:#c8c8c8;
+$coloree:#eeeeee;
+$colore4:#e4e4e4;
+$black:#333333;
+$red:#a51e32;
+#mean{
+    padding: 0.8rem 0;
+    .titles{
+        padding-bottom: 0.6rem;
+    }
+    .meanBox{
+        position: relative;
+        .meanImg{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+            
+        }
+        .meanP{
+            position: absolute;
+            left: 3%;
+            width: 94%;
+            margin: 0 auto;
+            margin-top: -1.2rem;
+            background-color: white;
+            padding: 0.2rem 0;
+            box-shadow: 0 0 2px 2px rgba(231,231,231,0.5);
+            p{              
+                margin: 0 auto;
+                width: 94%;
+                padding: 0 3%;
+                line-height: 0.5rem;
+                font-size: 0.28rem;
+                color: $black;
+            }
+        }
+        .zhanwei{
+            width: 100%;
+        }
+    }
+}
+#road{
+    padding-bottom: 0.2rem;
+}
+.yearsBox{
+    margin: 0 auto;
+    padding: 0 10%;
+    >div:nth-last-child(1){
+        margin-right: 0;
+    }
+}
+.long{
+    width: 1px;
+    height: 0.5rem;
+    background-color: #787878;
+    margin-right:5px;
+    position: relative;
+    .yearNumber{
+        position: absolute;
+        bottom: 105%;
+        left: -0.5rem;
+        width: 1rem;
+        img{
+            width: 100%;
+        }
+        p{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            margin-top: 40%;
+            text-align: center;
+            font-size: 0.2rem;
+            color: $colorc8;
+        }
+    }
+}
+.longActive{
+    background-color: $red!important;
+    p{
+        color: white!important;
+    }
+    
+}
+.short{
+    width: 1px;
+    height: 0.3rem;
+    margin-top: 0.2rem;
+    background-color: #787878;
+    margin-right: 5px;
+}
+.yearsBoxOut{
+    padding-top: 1.6rem; 
+    overflow-x: scroll;
+}
+.roadContent{
+    margin-top: 0.6rem;
+    .rcTitle{
+        font-size: 0.32rem;
+        color: $black;
+    }
+    .rcTime{
+        font-size: 0.28rem;
+        color: $color8;
+        line-height: 0.7rem;
+        text-indent: 0.2rem;
+    }
+    .rcContent{
+        font-size: 0.28rem;
+        color: $color8;
+        line-height: 0.5rem;
+        margin-bottom: 0.2rem;
+    }
+    img{
+        width: 100%;
+    }
+}
+#activity{
+    padding-bottom: 0.8rem;
+    .titles{
+        padding: 0.6rem 0 0.4rem;
+    }
+    .acBLeft{
+        width: 35%;
+        img{
+            width: 100%;
+        }
+    }
+    .activityBox{
+        padding: 0.4rem 0;
+        border-bottom: 1px solid $colorc8;
+    }
+    .acBRight{
+        width: 60%;
+        margin-left: 3%;
+        
+        ul li:nth-child(1) p{
+            font-size: 0.28rem;
+            color: $black;
+            padding: 0.05rem 0;
+        }
+        ul li:nth-child(2) p{
+            font-size: 0.26rem;
+            color: $color8;
+            line-height: 0.36rem;
+            padding: 0.05rem 0;
+        }
+        ul li:nth-child(3) p{
+            font-size: 0.24rem;
+            color: $color8;
+        }
+    }
+}

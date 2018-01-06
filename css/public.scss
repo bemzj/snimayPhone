@@ -338,3 +338,71 @@ nav{
         margin-right: 0;
     }
 }
+#banner{
+    position: relative;
+    
+}
+.nav{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 0.9rem;
+    z-index: 100;
+    transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+    -ms-transition: background-color 0.4s;
+    -webkit-transition: background-color 0.4s;
+    a{
+        display: block;
+        height: 0.36rem;
+        margin-top: 0.27rem;
+        img{
+            width: auto!important;
+            height: 0.36rem;
+        }
+    }
+    .logo{
+        margin-left: 2.7%;
+    }
+    .getMore{
+        margin-right: 2.7%;
+    }
+    .secondNav{
+        background-color: $black;  
+        display: none; 
+        >ul{
+           padding-top: 0.2rem; 
+        }
+        >ul>li>a{
+            display: block;
+            margin: 0 auto;
+            width: 94.6%;
+            line-height: 0.8rem;
+            height: 0.8rem;
+            font-size: 0.28rem;
+            color: $color8;
+            border-bottom: 1px solid #444444;
+            
+        }
+        >ul>li>ul>li>a{
+                display: block;
+                margin: 0 auto;
+                width: 94.6%;
+                line-height: 0.8rem;
+                height: 0.8rem;
+                font-size: 0.28rem;
+                color: $color8;
+                border-bottom: 1px solid #444444;
+                text-indent: 0.4rem;
+            } 
+    }
+    .navMore{
+        background: url(../img/add.png) no-repeat 97.5% center;
+        background-size: 0.2rem auto;
+    }
+    .none{
+        background: url(../img/nomores.png) no-repeat 97.5% center;
+        background-size: 0.15rem auto;
+    }
+}

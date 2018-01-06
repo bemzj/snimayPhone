@@ -1,0 +1,189 @@
+$color8:#888888;
+$colorc8:#c8c8c8;
+$coloree:#eeeeee;
+$colore4:#e4e4e4;
+$black:#333333;
+$red:#a51e32;
+#banner{
+    >img{
+        width: 100%;
+    }
+    .swiperBox{
+        width: 100%;
+        position: relative;
+        .swiper-container-pro{
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        margin: 0.2rem auto;
+    }
+    .swiper-slide{
+        width: 30%;
+        img{
+            width: 100%;
+        }
+    }
+    .swiper-button-prev {
+        background-image: url(../img/leftb.png);
+        width: 0.24rem;
+        height: 0.4rem;
+        padding: 0 0.2rem;
+        top: 50%;
+        margin-top:-0.2rem;
+        background-size: 0.24rem 0.4rem;
+        left: 0px;
+    }
+    .swiper-button-next {
+        background-image: url(../img/rightb.png);
+        width: 0.24rem;
+        height: 0.4rem;
+        padding: 0 0.2rem;
+        top: 50%;
+        margin-top:-0.2rem;
+        background-size: 0.24rem 0.4rem;
+        right: 0px;
+    }
+}
+#details{
+    padding-top: 0.4rem;
+    .titles ul li:nth-child(1) p{
+        text-align: left;
+        font-weight: bold;
+    }
+    .titles ul li:nth-child(2) p{
+        text-align: left;
+    }
+    .titles ul li:nth-child(3) span{
+        margin-left: 0px;
+        margin-bottom: 0.2rem;
+    }
+    .titles ul li:nth-child(4) p{
+        font-size: 0.26rem;
+        color: $color8;
+        line-height: 0.5rem;
+    }
+    .titles{
+        padding-bottom: 0.2rem;
+        border-bottom: 1px solid $colorc8;
+    }
+    .detailBox{
+        width: 100%;
+        position: relative;
+        margin-top: 0.2rem;
+        .dbContent{
+            width: 84%;
+            margin-left: 16%;
+            a{
+                line-height: 0.6rem;
+                font-size: 0.26rem;
+                padding: 0 0.15rem;
+                border: 1px solid $colorc8;
+                border-radius: 10px;
+                color: $color8;
+                margin-right: 0.1rem;
+            }
+            a:nth-last-child(2){
+                margin-right: 0;
+            }
+            a.img{
+                height: 0.6rem;
+                padding: 0;
+                border: 0;
+                img{
+                    height: 100%;
+                }
+            }
+        }
+        p{
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 0.28rem;
+            line-height: 0.6rem;
+            color: $color8;
+            text-indent: 0.2rem;
+        }
+    }
+    .detailBox2{
+        width: 100%;
+        position: relative;
+        margin-top: 0.2rem;
+        .dbContent2{
+            width: 75%;
+            margin-left: 25%;
+            a{
+                line-height: 0.6rem;
+                font-size: 0.26rem;
+                padding: 0 0.2rem;
+                border: 1px solid $colorc8;
+                color: $color8;
+                margin-right: 0.1rem;
+            }
+            a:nth-last-child(2){
+                margin-right: 0;
+            }
+        }
+        p{
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 0.28rem;
+            line-height: 0.6rem;
+            color: $color8;
+            text-indent: 0.2rem;
+        }
+    }
+    .rbtn{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 0.2rem;
+        margin-bottom: 0.4rem;
+        button{
+            height: 0.8rem;
+        }
+    }
+    .detailBox0{
+        margin-top: 0.4rem;
+    }
+}
+#produceDetails{
+    padding: 0.8rem 0;
+    
+}
+#tenServer{
+    padding-bottom: 0.8rem;
+    .tenBox{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .tenIntro{
+        
+        .floatl{
+            width: 47%;
+            background-color: #F6F6F6;
+            margin-top: 0.4rem;
+            padding: 0.3rem 0 0.4rem;
+            .tImg{
+                width: 44%;
+                margin: 0 auto;
+            }
+            .tTitle{
+                text-align: center;
+                font-size: 0.3rem;
+                font-weight: bold;
+                margin-top: 0.15rem;
+            }
+            .tP{
+                text-align: center;
+                font-size: 0.24rem;
+                color: $color8;
+            }
+        }
+        .floatl:nth-child(2n+1){
+            margin-right: 6%;
+        }
+    }
+}

@@ -3,7 +3,10 @@ $(function(){
 	$('.backToPrev').on('click',function(){
 		window.history.back();
 	});
-	
+	$('.getMore').on('click',function(){
+		$('.nav').css('background-color','#333333');
+		$('.secondNav').slideDown(1000);
+	});
 });
 function alertWind(text){
 	var html = "";
