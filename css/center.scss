@@ -6,9 +6,54 @@ $black:#333333;
 $red:#a51e32;
 #center{
     padding: 0.8rem 0;
-    .roomBox{
+    .selectBoxOut{
+        margin-top: 0.6rem;
+        overflow-x: scroll;
         .selectBox{
-            width: 100%;
+            .selectChild{
+                margin-right: 2px;
+                button{
+                    width: 100%;
+                    display: block;
+                    height: 0.7rem;
+                    background-color: #eeeeee;
+                    border: 1px solid #c8c8c8;
+                    color: #888888;
+                }
+                .selectActive{
+                    background-color: $red;
+                    color: white;
+                    border-color: $red;
+                }
+            }
+            .selectChild:nth-last-child(2){
+                margin-right: 0;
+            }
+            
+        }
+    }
+    .roomlist{
+        padding: 0.6rem 0;
+        .roomChild{
+            display: block;
+            .clLeft{
+                width: 38%;
+                img{
+                    width: 100%;
+                }
+            }
+            .clRight{
+                width: 57%;
+                margin-left: 4%;
+                .clTitle{
+                    font-size: 0.28rem;
+                    color: $black;
+                }
+                .clContent{
+                    font-size: 0.26rem;
+                    color: $color8;
+                }
+            }
         }
     }
 }

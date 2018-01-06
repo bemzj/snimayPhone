@@ -240,37 +240,6 @@
       color: #888888;
       line-height: 0.36rem; }
 
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  display: -webkit-flex;
-  -webkit-align-items: center;
-  -webkit-justify-content: center;
-  -webkit-flex-direction: column; }
-  .page ul li {
-    float: left;
-    margin-right: 0.05rem; }
-    .page ul li a {
-      display: block;
-      width: 0.5rem;
-      height: 0.6rem;
-      background-color: white;
-      border: 1px solid #c8c8c8;
-      color: #888888;
-      font-size: 0.28rem;
-      line-height: 0.6rem;
-      text-align: center; }
-    .page ul li a.word {
-      width: 1.4rem; }
-    .page ul li .activePage {
-      background-color: #a51e32;
-      border-color: #a51e32;
-      color: white; }
-  .page ul li:nth-last-child(2) {
-    margin-right: 0; }
-
 #NewDetails, #companyDetails {
   position: fixed;
   top: 0%;

@@ -294,42 +294,6 @@ $red:#a51e32;
         }
     }
 }
-.page{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    display: -webkit-flex;
-    -webkit-align-items: center;
-    -webkit-justify-content: center;
-    -webkit-flex-direction: column;
-    ul li{
-        float: left;
-        margin-right: 0.05rem;
-        a{
-            display: block;
-            width: 0.5rem;
-            height: 0.6rem;
-            background-color: white;
-            border: 1px solid $colorc8;
-            color: $color8;
-            font-size: 0.28rem;
-            line-height: 0.6rem;
-            text-align: center;
-        }
-        a.word{
-            width: 1.4rem;
-        }
-        .activePage{
-            background-color: $red;
-            border-color: $red;
-            color: white;
-        }
-    }
-    ul li:nth-last-child(2){
-        margin-right: 0;
-    }
-}
 #NewDetails,#companyDetails{
     position: fixed;
     top: 0%;

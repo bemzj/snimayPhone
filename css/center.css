@@ -1,7 +1,40 @@
 #center {
   padding: 0.8rem 0; }
-  #center .roomBox .selectBox {
-    width: 100%; }
+  #center .selectBoxOut {
+    margin-top: 0.6rem;
+    overflow-x: scroll; }
+    #center .selectBoxOut .selectBox .selectChild {
+      margin-right: 2px; }
+      #center .selectBoxOut .selectBox .selectChild button {
+        width: 100%;
+        display: block;
+        height: 0.7rem;
+        background-color: #eeeeee;
+        border: 1px solid #c8c8c8;
+        color: #888888; }
+      #center .selectBoxOut .selectBox .selectChild .selectActive {
+        background-color: #a51e32;
+        color: white;
+        border-color: #a51e32; }
+    #center .selectBoxOut .selectBox .selectChild:nth-last-child(2) {
+      margin-right: 0; }
+  #center .roomlist {
+    padding: 0.6rem 0; }
+    #center .roomlist .roomChild {
+      display: block; }
+      #center .roomlist .roomChild .clLeft {
+        width: 38%; }
+        #center .roomlist .roomChild .clLeft img {
+          width: 100%; }
+      #center .roomlist .roomChild .clRight {
+        width: 57%;
+        margin-left: 4%; }
+        #center .roomlist .roomChild .clRight .clTitle {
+          font-size: 0.28rem;
+          color: #333333; }
+        #center .roomlist .roomChild .clRight .clContent {
+          font-size: 0.26rem;
+          color: #888888; }
 
 .searchBox {
   width: 100%;
