@@ -105,11 +105,6 @@
     #details .paperBox > img {
       width: 100%; }
 
-nav {
-  background-color: #f6f6f6;
-  box-shadow: 0 0 2px 2px rgba(51, 51, 51, 0.1);
-  position: relative; }
-
 .choice2 {
   margin-top: 0.4rem;
   padding-bottom: 0.8rem; }
@@ -214,33 +209,33 @@ nav {
   width: 100% !important;
   height: 4rem !important; }
 
-#media {
+#media, #company {
   padding: 0.8rem 0; }
-  #media .mediaBox {
+  #media .mediaBox, #company .mediaBox {
     width: 100%;
     padding: 0.4rem 0;
     box-shadow: 0 0 2px 2px rgba(231, 231, 231, 0.5);
     margin-bottom: 0.4rem; }
-  #media .mBLeft {
+  #media .mBLeft, #company .mBLeft {
     width: 20%; }
-    #media .mBLeft p {
+    #media .mBLeft p, #company .mBLeft p {
       text-align: right; }
-    #media .mBLeft .mpTitle {
+    #media .mBLeft .mpTitle, #company .mBLeft .mpTitle {
       color: #333333;
       font-size: 0.3rem;
       margin-top: 0.2rem; }
-    #media .mBLeft .mpContent {
+    #media .mBLeft .mpContent, #company .mBLeft .mpContent {
       color: #888888;
       font-size: 0.24rem; }
-  #media .mBRight {
+  #media .mBRight, #company .mBRight {
     width: 70%;
     margin-left: 5%; }
-    #media .mBRight .mrTitle {
+    #media .mBRight .mrTitle, #company .mBRight .mrTitle {
       font-size: 0.28rem;
       text-align: center;
       color: #a51e32;
       margin-bottom: 0.15rem; }
-    #media .mBRight .mrContent {
+    #media .mBRight .mrContent, #company .mBRight .mrContent {
       font-size: 0.24rem;
       color: #888888;
       line-height: 0.36rem; }
@@ -256,7 +251,7 @@ nav {
   -webkit-flex-direction: column; }
   .page ul li {
     float: left;
-    margin-right: 0.08rem; }
+    margin-right: 0.05rem; }
     .page ul li a {
       display: block;
       width: 0.5rem;
@@ -276,59 +271,64 @@ nav {
   .page ul li:nth-last-child(2) {
     margin-right: 0; }
 
-#NewDetails {
+#NewDetails, #companyDetails {
   position: fixed;
   top: 0%;
-  left: 0%;
+  left: 100%;
   width: 100%;
   height: 100%;
   background-color: #ffffff;
   overflow-x: hidden;
   overflow-y: scroll;
+  display: none;
   z-index: 5; }
-  #NewDetails .newTop {
+  #NewDetails nav, #companyDetails nav {
+    background-color: #f6f6f6;
+    box-shadow: 0 0 2px 2px rgba(51, 51, 51, 0.1);
+    position: relative; }
+  #NewDetails .newTop, #companyDetails .newTop {
     padding: 0.4rem 0 0.3rem;
     border-bottom: 1px solid #c8c8c8; }
-    #NewDetails .newTop ul li:nth-child(1) {
+    #NewDetails .newTop ul li:nth-child(1), #companyDetails .newTop ul li:nth-child(1) {
       font-size: 0.32rem;
       line-height: 0.5rem;
       font-weight: bold; }
-    #NewDetails .newTop ul li:nth-child(2) {
+    #NewDetails .newTop ul li:nth-child(2), #companyDetails .newTop ul li:nth-child(2) {
       font-size: 0.24rem;
       line-height: 0.5rem;
       font-weight: bold; }
-      #NewDetails .newTop ul li:nth-child(2) p {
+      #NewDetails .newTop ul li:nth-child(2) p, #companyDetails .newTop ul li:nth-child(2) p {
         color: #888888; }
-        #NewDetails .newTop ul li:nth-child(2) p span:nth-child(1) {
+        #NewDetails .newTop ul li:nth-child(2) p span:nth-child(1), #companyDetails .newTop ul li:nth-child(2) p span:nth-child(1) {
           text-indent: 0.35rem;
           display: inline-block;
           background: url(../img/newsTime.png) no-repeat 0rem 0.13rem;
           background-size: auto 0.22rem; }
-        #NewDetails .newTop ul li:nth-child(2) p span:nth-child(2) {
+        #NewDetails .newTop ul li:nth-child(2) p span:nth-child(2), #companyDetails .newTop ul li:nth-child(2) p span:nth-child(2) {
           text-indent: 0.62rem;
           display: inline-block;
           background: url(../img/eye.png) no-repeat 0.2rem 0.16rem;
           background-size: auto 0.16rem; }
-  #NewDetails .newContent {
+  #NewDetails .newContent, #companyDetails .newContent {
     border-bottom: 1px solid #c8c8c8; }
-    #NewDetails .newContent p {
+    #NewDetails .newContent p, #companyDetails .newContent p {
       padding: 0.3rem 0;
       font-size: 0.26rem;
       color: #888888;
       line-height: 0.5rem; }
-    #NewDetails .newContent img {
+    #NewDetails .newContent img, #companyDetails .newContent img {
       width: 100%;
       padding: 0.2rem 0; }
-  #NewDetails .label .flabel {
+  #NewDetails .label .flabel, #companyDetails .label .flabel {
     margin-top: 0.4rem;
     width: 15%;
     font-size: 0.28rem;
     line-height: 0.5rem;
     color: #888888;
     margin-left: 2%; }
-  #NewDetails .label .fp {
+  #NewDetails .label .fp, #companyDetails .label .fp {
     width: 80%; }
-    #NewDetails .label .fp a {
+    #NewDetails .label .fp a, #companyDetails .label .fp a {
       margin-top: 0.4rem;
       float: left;
       display: block;
@@ -339,17 +339,17 @@ nav {
       color: #888888;
       font-size: 0.24rem;
       margin-right: 0.1rem; }
-  #NewDetails .share .flshare {
+  #NewDetails .share .flshare, #companyDetails .share .flshare {
     margin-top: 0.3rem;
     width: 15%;
     font-size: 0.28rem;
     line-height: 0.5rem;
     color: #888888;
     margin-left: 2%; }
-  #NewDetails .share .frshare {
+  #NewDetails .share .frshare, #companyDetails .share .frshare {
     width: 80%;
     margin-top: 0.3rem; }
-    #NewDetails .share .frshare a {
+    #NewDetails .share .frshare a, #companyDetails .share .frshare a {
       float: left;
       width: 0.5rem;
       height: 0.5rem;

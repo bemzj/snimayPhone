@@ -1,0 +1,33 @@
+$color8:#888888;
+$colorc8:#c8c8c8;
+$coloree:#eeeeee;
+$colore4:#e4e4e4;
+$black:#333333;
+$red:#a51e32;
+#center{
+    padding: 0.8rem 0;
+    .roomBox{
+        .selectBox{
+            width: 100%;
+        }
+    }
+}
+.searchBox {
+    width: 100%;
+    border: 1px solid $colorc8;
+    height: 0.8rem;
+    margin-left: -1px;
+    background: url(../img/search.png) no-repeat 0.2rem center;
+    background-size: auto 0.32rem;
+    overflow: hidden;
+    margin-bottom: 0.6rem;
+    input {
+        display: block;
+        width: 85%;
+        border: 0;
+        height: 100%;
+        margin-left: 12%;
+        margin-top: 1px;
+        color: $black;
+    }
+}

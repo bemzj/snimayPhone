@@ -26,7 +26,7 @@ $(function(){
 	};
 	//选择地区
 	$('.choice2 select').change(function(){
-		$(this).prev('p').html($(this).children('option:selected').val());
+		$(this).prev('p').html($(this).children('option:selected').html());
 	});
 	//选择
 	$('.fSBox button').on('click',function(){
