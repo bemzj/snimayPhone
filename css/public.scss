@@ -347,12 +347,19 @@ nav{
     top: 0;
     left: 0%;
     width: 100%;
-    height: 0.9rem;
+    min-height: 0.9rem;
     z-index: 100;
-    transition: background-color 0.4s;
-    -moz-transition: background-color 0.4s;
-    -ms-transition: background-color 0.4s;
-    -webkit-transition: background-color 0.4s;
+//  transition: background-color 0.5s;
+//  -moz-transition: background-color 0.5s;
+//  -ms-transition: background-color 0.5s;
+//  -webkit-transition: background-color 0.5s;
+    .firstNav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0.9rem;
+    }
     a{
         display: block;
         height: 0.36rem;
@@ -370,20 +377,21 @@ nav{
     }
     .secondNav{
         background-color: $black;  
+        padding-bottom: 0.2rem;
         display: none; 
-        >ul{
-           padding-top: 0.2rem; 
+        >ul>li{
+            width: 94.6%;
+            margin: 0 auto;
+            border-bottom: 1px solid #444444;
         }
         >ul>li>a{
             display: block;
             margin: 0 auto;
-            width: 94.6%;
+            width: 100%;
             line-height: 0.8rem;
             height: 0.8rem;
             font-size: 0.28rem;
-            color: $color8;
-            border-bottom: 1px solid #444444;
-            
+            color: $color8;   
         }
         >ul>li>ul>li>a{
                 display: block;
@@ -396,6 +404,39 @@ nav{
                 border-bottom: 1px solid #444444;
                 text-indent: 0.4rem;
             } 
+        > ul > li > ul > li:nth-last-child(1) > a{
+            border: 0;
+        }
+        .navSearch{
+            background: url(../img/navSearch.png) no-repeat left center;
+            background-size: auto 0.32rem;
+            position: relative;
+            overflow: hidden;
+            .shBtn{
+                width: 20%;
+                height: 0.8rem;
+                color: white;
+                font-size: 0.28rem;
+                position: absolute;
+                top: 0;
+                right: -20%;
+                background-color: transparent;
+            }
+        }
+        > ul > li >input{
+                display: block;
+                width: 73%;
+                line-height: 0.8rem;
+                height: 0.8rem;
+                font-size: 0.28rem;
+                color: $color8;
+                margin-left: 0.4rem;
+                border: 0;
+                background-color: transparent;
+        }
+        >ul>li>ul{
+            display: none;
+        }
     }
     .navMore{
         background: url(../img/add.png) no-repeat 97.5% center;
@@ -404,5 +445,9 @@ nav{
     .none{
         background: url(../img/nomores.png) no-repeat 97.5% center;
         background-size: 0.15rem auto;
+    }
+    .zw{
+        width: 100%;
+        height: 0.8rem;
     }
 }

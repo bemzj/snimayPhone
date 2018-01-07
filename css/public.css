@@ -294,12 +294,14 @@ nav {
   top: 0;
   left: 0%;
   width: 100%;
-  height: 0.9rem;
-  z-index: 100;
-  transition: background-color 0.4s;
-  -moz-transition: background-color 0.4s;
-  -ms-transition: background-color 0.4s;
-  -webkit-transition: background-color 0.4s; }
+  min-height: 0.9rem;
+  z-index: 100; }
+  .nav .firstNav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.9rem; }
   .nav a {
     display: block;
     height: 0.36rem;
@@ -313,18 +315,20 @@ nav {
     margin-right: 2.7%; }
   .nav .secondNav {
     background-color: #333333;
+    padding-bottom: 0.2rem;
     display: none; }
-    .nav .secondNav > ul {
-      padding-top: 0.2rem; }
+    .nav .secondNav > ul > li {
+      width: 94.6%;
+      margin: 0 auto;
+      border-bottom: 1px solid #444444; }
     .nav .secondNav > ul > li > a {
       display: block;
       margin: 0 auto;
-      width: 94.6%;
+      width: 100%;
       line-height: 0.8rem;
       height: 0.8rem;
       font-size: 0.28rem;
-      color: #888888;
-      border-bottom: 1px solid #444444; }
+      color: #888888; }
     .nav .secondNav > ul > li > ul > li > a {
       display: block;
       margin: 0 auto;
@@ -335,11 +339,42 @@ nav {
       color: #888888;
       border-bottom: 1px solid #444444;
       text-indent: 0.4rem; }
+    .nav .secondNav > ul > li > ul > li:nth-last-child(1) > a {
+      border: 0; }
+    .nav .secondNav .navSearch {
+      background: url(../img/navSearch.png) no-repeat left center;
+      background-size: auto 0.32rem;
+      position: relative;
+      overflow: hidden; }
+      .nav .secondNav .navSearch .shBtn {
+        width: 20%;
+        height: 0.8rem;
+        color: white;
+        font-size: 0.28rem;
+        position: absolute;
+        top: 0;
+        right: -20%;
+        background-color: transparent; }
+    .nav .secondNav > ul > li > input {
+      display: block;
+      width: 73%;
+      line-height: 0.8rem;
+      height: 0.8rem;
+      font-size: 0.28rem;
+      color: #888888;
+      margin-left: 0.4rem;
+      border: 0;
+      background-color: transparent; }
+    .nav .secondNav > ul > li > ul {
+      display: none; }
   .nav .navMore {
     background: url(../img/add.png) no-repeat 97.5% center;
     background-size: 0.2rem auto; }
   .nav .none {
     background: url(../img/nomores.png) no-repeat 97.5% center;
     background-size: 0.15rem auto; }
+  .nav .zw {
+    width: 100%;
+    height: 0.8rem; }
 
 /*# sourceMappingURL=public.css.map */
