@@ -1,6 +1,6 @@
 $(function(){
 	//返回上一页
-	$('.backToPrev').on('click',function(){
+	$('.reToPrev').on('click',function(){
 		window.history.back();
 	});
 	$('.getMore').on('click',function(){
@@ -10,6 +10,12 @@ $(function(){
 			$('.secondNav').stop().slideDown(500);
 			$('.getMore').css('margin-right','3.8%');
 			$('.getMore').find('img').attr('src','img/closeNav.png');
+			$('.navTitle').removeClass('ntBlack');
+			$('.navTitle').addClass('ntWhite');	
+			if(currentPage!=1)
+			{
+				$('.reToPrev').find('img').attr('src','img/backWhite.png');
+			}
 		}else{
 			$(this).attr('isOpen',false);			
 			$('.secondNav').stop().slideUp(500);
@@ -17,7 +23,16 @@ $(function(){
 			$('.navMore').next('ul').stop().slideUp(500);
 			$('.navMore').css('background-image','url(img/add.png)');
 			$('.getMore').css('margin-right','2.7%');
-			$('.getMore').find('img').attr('src','img/white.png');
+			if(currentPage==1)
+			{
+				$('.getMore').find('img').attr('src','img/white.png');
+			}else{
+				$('.getMore').find('img').attr('src','img/moreBlack.png');
+				$('.reToPrev').find('img').attr('src','img/backBlack.png');
+			}
+			
+			$('.navTitle').removeClass('ntWhite');
+			$('.navTitle').addClass('ntBlack');	
 		}
 	});
 	$('.navMore').on('click',function(){
