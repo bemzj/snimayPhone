@@ -22,6 +22,19 @@ $(function(){
 		labelw2 += parseInt($('.use .labelBox').find('.labels').eq(i).width()+22);
 	}
 	$('.use .labelBox').width(labelw2/3-2);
+	//选择
+	$('.home button').on('click',function(){
+		$('.home button').removeClass('selectActive');
+		$(this).addClass('selectActive');
+	});
+	$('.littlehome button').on('click',function(){
+		$('.littlehome button').removeClass('selectActive');
+		$(this).addClass('selectActive');
+	});
+	$('.use button').on('click',function(){
+		$('.use button').removeClass('selectActive');
+		$(this).addClass('selectActive');
+	});
 	//三级联动
 	!function () {
         var $target = $('#J_Address');

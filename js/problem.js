@@ -3,6 +3,15 @@ $(function(){
 	$('.select select').change(function(){
 		$('.typeP').html($(this).children('option:selected').html());
 	});
+	$('#city1').on('click',function(){
+    	$(this).blur();
+    });
+    $('#city2').on('click',function(){
+    	$(this).blur();
+    });
+    $('#city3').on('click',function(){
+    	$(this).blur();
+    });
 	//三级联动
 	!function () {
         var $target = $('#city1');
@@ -46,9 +55,7 @@ $(function(){
             $(this).val(ret.provance + ' ' + ret.city + ' ' + ret.area);
         });
     }();
-    $('#city3','#city2','#city3').on('click',function(){
-    	$(this).blur();
-    });
+    
     //三种选择
     $('.threeChoice button').on('click',function(){
     	$('.threeChoice button').removeClass('redBtn');
@@ -75,5 +82,14 @@ $(function(){
     			break;
     	}
     });
+    //选择文件
+	$('.file').change(function(){
+		if($(this).val()=="")
+		{
+			$('.filesrc').text("未选择文件");
+		}else{
+			$('.filesrc').text($(this).val());
+		}
+	});
     alertWind('您的反馈意见已经发送成功。<br/>感谢您对诗尼曼的支持！');
 });

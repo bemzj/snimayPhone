@@ -38,12 +38,6 @@ $(function(){
 			$(this).hide();
 		});
 	});
-	//向右滑
-	touch.on('#jobDetails', 'swiperight', function(ev){
-	    $('#jobDetails').stop().animate({'left':'100%'},500,function(){
-			$(this).hide();
-		});
-	});
 	//搜说
 	 $('.searchBox input').on('input',function(){
 		if($(this).val().length>0)

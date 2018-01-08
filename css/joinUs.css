@@ -13,7 +13,7 @@
         color: #333333;
         text-indent: 0.28rem;
         background: url(../img/rArrow.png) no-repeat 92% center;
-        background-size: auto 0.34rem; }
+        background-size: auto 0.3rem; }
       #companyJob .choice2 > .flr button {
         display: block;
         height: 0.8rem;
@@ -55,7 +55,8 @@
       height: 100%;
       margin-left: 12%;
       margin-top: 1px;
-      color: #333333; }
+      color: #333333;
+      font-size: 0.26rem; }
     #companyJob .searchBox .closeSearch {
       display: none;
       position: absolute;
@@ -172,6 +173,8 @@
     width: 55%;
     margin: 0 auto;
     padding: 0.2rem 0 0.6rem; }
+    #jobDetails .applyBox button {
+      height: 0.8rem; }
 
 #jobPop {
   position: fixed;
@@ -276,11 +279,13 @@
           left: 0;
           color: #333333; }
         #jobPop .jobPop .getJob .selectFile button {
+          display: block;
           position: absolute;
           top: 0.15rem;
           left: 1.2rem;
           width: 1.4rem;
           height: 0.7rem;
+          font-size: 0.26rem;
           background-color: #eeeeee;
           border: 1px solid #c8c8c8; }
           #jobPop .jobPop .getJob .selectFile button .file {

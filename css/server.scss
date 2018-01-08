@@ -11,7 +11,7 @@ $red:#a51e32;
 }
 #order{
     padding: 0.8rem 0;
-    .searchBox{
+    .searchBox{      
         width: 100%;
         border: 1px solid $colorc8;
         height: 0.8rem;
@@ -19,16 +19,17 @@ $red:#a51e32;
         background: url(../img/search.png) no-repeat 0.2rem center;
         background-size: auto 0.32rem;
         overflow: hidden;
-        margin-top: 0.6rem;
-        input{
+        position: relative;
+        margin-top: 0.2rem;
+        input {
             display: block;
-            width: 87%;
+            width: 72%;//72
             border: 0;
             height: 100%;
             margin-left: 12%;
             margin-top: 1px;
-            font-size: 0.24rem;
-            color:$black;
+            color: $black;
+            font-size: 0.26rem;
         }
         input::-moz-placeholder{
             color: $color8;
@@ -38,6 +39,28 @@ $red:#a51e32;
         }
         input::-webkit-input-placeholder{
             color: $color8;
+        }
+        .closeSearch{
+            display: none;
+            position: absolute;
+            top: 0.1rem;
+            right: 15%;
+            width: 0.6rem;
+            height: 0.6rem;
+            img{
+               width: 40%;
+               margin: 30%; 
+            }
+            
+        }
+        .findBtn{
+            position: absolute;
+            top: 0;
+            padding: 0 0.2rem 0 0;
+            right: 0.1rem;
+            line-height: 0.8rem;
+            font-size: 0.28rem;
+            color: $red;
         }
     }
     .orderProtect:nth-last-child(1){

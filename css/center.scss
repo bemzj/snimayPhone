@@ -19,6 +19,7 @@ $red:#a51e32;
                     background-color: #eeeeee;
                     border: 1px solid #c8c8c8;
                     color: #888888;
+                    font-size: 0.26rem;
                 }
                 .selectActive{
                     background-color: $red;
@@ -89,6 +90,7 @@ $red:#a51e32;
             height: 0.7rem;
             color: white;
             background-color: $red;
+            font-size: 0.28rem;
         }
     }
     .orderMessage{
@@ -171,7 +173,7 @@ $red:#a51e32;
             margin: 0 auto;
             button{
                 height: 0.8rem;
-                font-size: 0.3rem;
+                font-size: 0.28rem;
             }
         }
     }
@@ -193,6 +195,7 @@ $red:#a51e32;
         margin-left: 12%;
         margin-top: 1px;
         color: $black;
+        font-size: 0.26rem;
     }
     .closeSearch{
         display: none;

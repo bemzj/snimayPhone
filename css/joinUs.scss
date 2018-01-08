@@ -21,7 +21,7 @@ $red:#a51e32;
                 color: $black;
                 text-indent: 0.28rem;
                 background: url(../img/rArrow.png) no-repeat 92% center;
-                background-size: auto 0.34rem; 
+                background-size: auto 0.3rem; 
             }
             button{
                 display: block;
@@ -73,6 +73,7 @@ $red:#a51e32;
             margin-left: 12%;
             margin-top: 1px;
             color: $black;
+            font-size: 0.26rem;
         }
         .closeSearch{
             display: none;
@@ -222,6 +223,9 @@ $red:#a51e32;
         width: 55%;
         margin: 0 auto;
         padding: 0.2rem 0 0.6rem;
+        button{
+            height: 0.8rem;
+        }
     }
 }
 #jobPop{
@@ -347,11 +351,13 @@ $red:#a51e32;
                     color: $black;
                 }
                 button{
+                    display: block;
                     position: absolute;
                     top: 0.15rem;
                     left: 1.2rem;
                     width: 1.4rem;
                     height: 0.7rem;
+                    font-size: 0.26rem;
                     background-color: $coloree;
                     border: 1px solid $colorc8;
                     .file{

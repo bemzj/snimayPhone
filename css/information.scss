@@ -16,6 +16,7 @@ $red:#a51e32;
             background-color: $coloree;
             border: 1px solid $colorc8;
             color: $color8;
+            font-size: 0.26rem;
         }
         .fbtn{
             background-color: $red;
@@ -103,7 +104,10 @@ $red:#a51e32;
         position: relative;
     }
     .paper{
-        padding: 0.4rem 0;
+        padding: 0.4rem 0 0.6rem;
+        .choice2{
+            padding-bottom: 0;
+        }
     }
     .paperBox{
         position: relative;
@@ -136,7 +140,7 @@ $red:#a51e32;
     
 .choice2{
         margin-top: 0.4rem;
-        padding-bottom: 0.8rem;
+        padding-bottom: 0.6rem;
         >.flr{
             width: 48%;
             position: relative;

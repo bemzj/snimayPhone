@@ -5,6 +5,8 @@ $colore4:#e4e4e4;
 $black:#333333;
 $red:#a51e32;
 #banner{
+    width: 100%;
+    overflow-x: hidden;
     >img{
         width: 100%;
     }
@@ -46,6 +48,8 @@ $red:#a51e32;
     }
 }
 #details{
+    width: 100%;
+    overflow-x: hidden;
     padding-top: 0.4rem;
     .titles ul li:nth-child(1) p{
         text-align: left;
@@ -137,7 +141,7 @@ $red:#a51e32;
     .rbtn{
         width: 80%;
         margin: 0 auto;
-        margin-top: 0.2rem;
+        margin-top: 0.6rem;
         margin-bottom: 0.4rem;
         button{
             height: 0.8rem;
@@ -149,9 +153,12 @@ $red:#a51e32;
 }
 #produceDetails{
     padding: 0.8rem 0;
-    
+    width: 100%;
+    overflow-x: hidden;
 }
 #tenServer{
+    width: 100%;
+    overflow-x: hidden;
     padding-bottom: 0.8rem;
     .tenBox{
         width: 100%;

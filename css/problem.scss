@@ -46,7 +46,7 @@ $red:#a51e32;
                 margin: 0 auto;
                 color: $color8;
                 background: url(../img/rArrow.png) no-repeat right center;
-                background-size: auto 0.34rem;
+                background-size: auto 0.3rem;
                 span:nth-child(1){
                     color: $red;
                 }
@@ -117,9 +117,35 @@ $red:#a51e32;
                 font-size: 0.28rem;
             }
         }
-        .fileup input{
-            margin-top: 0.15rem;
-            line-height: 0.5rem;
+        .fileup{
+            .filesrc {
+                width: 40%;
+                margin-left: 60%;
+                height: 0.8rem;
+                line-height: 0.8rem;
+                color: #333333;
+            }
+             button {
+                display: block;
+                position: absolute;
+                top: 0.1rem;
+                left: 30%;
+                width: 1.4rem;
+                height: 0.6rem;
+                margin-top: -1px;
+                font-size: 0.26rem;
+                background-color: #eeeeee;
+                border: 1px solid #c8c8c8;
+            }
+            .file {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                margin-left: 0%;
+            }
         }
         .suggestion{
             margin-top: 0.3rem;

@@ -24,6 +24,7 @@ $red:#a51e32;
                 background-color: $coloree;
                 border: 1px solid $colorc8;
                 color: $color8;
+                font-size: 0.26rem;
             }
             .activeBtn{
                 background-color: $red;
@@ -78,6 +79,7 @@ $red:#a51e32;
 }
 #development{
     padding: 0.8rem 0;
+    overflow-x: hidden;
     .titles{
         margin-bottom: 0.4rem;
     }
@@ -92,7 +94,7 @@ $red:#a51e32;
         background-color: $coloree;
         border: 1px solid $colorc8;
         border-radius: 4px;
-        padding: 0.25rem 0;
+        padding: 0.25rem 0 0.28rem;
         ul{
             width: 90%;
             margin: 0 auto;
@@ -147,6 +149,7 @@ $red:#a51e32;
     }
 }
 #net{
+    overflow-x: hidden;
     padding: 0.8rem 0;
     .choice2{
         margin-top: 0.4rem;
@@ -162,7 +165,7 @@ $red:#a51e32;
                 color: $black;
                 text-indent: 0.28rem;
                 background: url(../img/rArrow.png) no-repeat 92% center;
-                background-size: auto 0.34rem; 
+                background-size: auto 0.3rem; 
             }
             button{
                 display: block;
@@ -214,6 +217,7 @@ $red:#a51e32;
             margin-left: 12%;
             margin-top: 1px;
             color: $black;
+            font-size: 0.26rem;
         }
         .closeSearch{
             display: none;
@@ -288,6 +292,7 @@ $red:#a51e32;
     }
 }
 #honor{
+    overflow-x: hidden;
     padding: 0.8rem 0;
     .titles{
         margin-bottom: 0.4rem;
