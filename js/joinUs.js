@@ -42,7 +42,15 @@ $(function(){
 	 $('.searchBox input').on('input',function(){
 		if($(this).val().length>0)
 		{
-			$(this).nextAll('.closeSearch').show();
+			$(this).siblings('.closeSearch').show();
+		}else{
+			$(this).siblings('.closeSearch').hide();
+		}
+	});
+	$('.searchBox input').on('click',function(){
+		if($(this).val().length>0)
+		{
+			$(this).siblings('.closeSearch').show();
 		}else{
 			$(this).siblings('.closeSearch').hide();
 		}

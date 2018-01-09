@@ -107,7 +107,13 @@ $red:#a51e32;
     display: block;
     font-size: 0.28rem; 
     background-color: $coloree;
+    border: 1px solid $colorc8;
     color: $color8;
+}
+.hasChoiceBtn{
+    background-color: $red;
+    color: white;
+    border-color: $red;
 }
 #join{
     padding-bottom: 1.0rem;

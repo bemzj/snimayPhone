@@ -31,8 +31,8 @@ $(function(){
 	});
 	//3种选择
 	$('.choice3 button').on('click',function(){
-		$('.choice3 button').removeClass('redmalBtn');
-		$(this).addClass('redmalBtn');
+		$('.choice3 button').removeClass('hasChoiceBtn');
+		$(this).addClass('hasChoiceBtn');
 		var index = parseInt($(this).attr('index'));
 		switch(index){
 			case 1:

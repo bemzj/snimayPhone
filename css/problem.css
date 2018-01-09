@@ -132,5 +132,13 @@
         background-color: #a51e32;
         color: white;
         font-size: 0.3rem; }
+    #problem .problem .fileup {
+      margin-bottom: 0; }
+
+.uploadTips {
+  text-align: center;
+  font-size: 0.2rem;
+  color: #a51e32;
+  margin: 0.2rem 0 0.1rem; }
 
 /*# sourceMappingURL=problem.css.map */

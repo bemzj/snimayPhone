@@ -268,7 +268,7 @@ $red:#a51e32;
             height: 100%;
             .titles{
                 margin-top: 0.8rem;
-                margin-bottom: 0.4rem;
+                margin-bottom: 0.3rem;
             }
             .joberMessage{
                 ul li{
@@ -332,7 +332,7 @@ $red:#a51e32;
             .selectFile{
                 width: 75%;
                 margin: 0 auto;
-                line-height: 1.0rem;
+                line-height: 0.8rem;
                 color: $color8;
                 font-size: 0.26rem;
                 position: relative;
@@ -340,8 +340,8 @@ $red:#a51e32;
                 .filesrc{
                     width: 40%;
                     margin-left: 60%;
-                    height: 1.0rem;
-                    line-height: 1.0rem;
+                    height: 0.8rem;
+                    line-height: 0.8rem;
                     color: $black;
                 }
                 .fliep{
@@ -353,10 +353,10 @@ $red:#a51e32;
                 button{
                     display: block;
                     position: absolute;
-                    top: 0.15rem;
+                    top: 0.1rem;
                     left: 1.2rem;
                     width: 1.4rem;
-                    height: 0.7rem;
+                    height: 0.6rem;
                     font-size: 0.26rem;
                     background-color: $coloree;
                     border: 1px solid $colorc8;
@@ -376,4 +376,10 @@ $red:#a51e32;
             }
         }
     }
+}
+.upTips{
+    text-align: center;
+    font-size: 0.2rem;
+    color: $red;
+    margin-bottom: 0.1rem;
 }

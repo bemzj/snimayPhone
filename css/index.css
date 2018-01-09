@@ -79,7 +79,13 @@
   display: block;
   font-size: 0.28rem;
   background-color: #eeeeee;
+  border: 1px solid #c8c8c8;
   color: #888888; }
+
+.hasChoiceBtn {
+  background-color: #a51e32;
+  color: white;
+  border-color: #a51e32; }
 
 #join {
   padding-bottom: 1.0rem; }

@@ -213,7 +213,7 @@
       height: 100%; }
       #jobPop .jobPop .getJob .titles {
         margin-top: 0.8rem;
-        margin-bottom: 0.4rem; }
+        margin-bottom: 0.3rem; }
       #jobPop .jobPop .getJob .joberMessage ul li {
         width: 75%;
         margin: 0 auto;
@@ -262,7 +262,7 @@
       #jobPop .jobPop .getJob .selectFile {
         width: 75%;
         margin: 0 auto;
-        line-height: 1.0rem;
+        line-height: 0.8rem;
         color: #888888;
         font-size: 0.26rem;
         position: relative;
@@ -270,8 +270,8 @@
         #jobPop .jobPop .getJob .selectFile .filesrc {
           width: 40%;
           margin-left: 60%;
-          height: 1.0rem;
-          line-height: 1.0rem;
+          height: 0.8rem;
+          line-height: 0.8rem;
           color: #333333; }
         #jobPop .jobPop .getJob .selectFile .fliep {
           position: absolute;
@@ -281,10 +281,10 @@
         #jobPop .jobPop .getJob .selectFile button {
           display: block;
           position: absolute;
-          top: 0.15rem;
+          top: 0.1rem;
           left: 1.2rem;
           width: 1.4rem;
-          height: 0.7rem;
+          height: 0.6rem;
           font-size: 0.26rem;
           background-color: #eeeeee;
           border: 1px solid #c8c8c8; }
@@ -298,5 +298,11 @@
       #jobPop .jobPop .getJob .submitBtn {
         width: 75%;
         margin: 0 auto; }
+
+.upTips {
+  text-align: center;
+  font-size: 0.2rem;
+  color: #a51e32;
+  margin-bottom: 0.1rem; }
 
 /*# sourceMappingURL=joinUs.css.map */

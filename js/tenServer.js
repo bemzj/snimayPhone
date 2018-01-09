@@ -1,13 +1,4 @@
 $(function(){
-	//播放视频
-	var myPlayer1 = videojs('my-video1');
-	videojs("my-video1").ready(function(){
-		var myPlayer = this;
-		$('.playVideo').click(function(){
-			myPlayer.play();
-			$(this).hide();
-		});
-	});
 	//开启滑动动画
 	if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
 		(function() {
