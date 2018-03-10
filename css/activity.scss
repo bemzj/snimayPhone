@@ -116,3 +116,288 @@ $blue:#4473b7;
         top: 85%;
     }
 }
+.why{
+    width: 100%;
+    position: relative;
+    .wLeft{
+        width: 50%;
+        >img{
+            width: 87.25%;
+        }
+    }
+    .wRight{
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width:50%;
+        height: 100%;
+        .wrTop p:nth-child(1){
+            font-size: 0.28rem;
+            color: $blue;
+            font-weight: bold;
+        }
+        .wrTop p:nth-child(1){
+            position: relative;
+        }
+        .wrTop p:nth-child(1)::after{
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            content: "";
+            width: 80%;
+            border-bottom: 1px solid $blue;
+        }
+       .wrTop p:nth-child(2){
+            font-size: 0.13rem;
+            color: $blue;
+        }
+        .wrBottom{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            font-size: 0.22rem;
+            line-height: 0.36rem;
+            color: #555555;
+            p{
+                width: 100%;
+            }
+        }
+    }
+}
+.whyBottom{
+    margin-top: 0.4rem;
+    .wLeft{
+        margin-left: 50%;
+        img{
+            margin-left: 12.75%;
+        }
+    }
+    .wRight{
+        left: 0%;
+        .wrTop p{
+            text-align: right;
+        }
+        .wrTop p:nth-child(1)::after{
+            left: 46%;
+            width: 54%;
+
+        }
+        .wrBottom{
+            p{
+                text-align: right;
+            }
+        }
+    }
+}
+.set{
+    .setTitle{
+        width: 100%;
+        text-align: center;
+        font-size: 0.3rem;
+        color: $blue;
+        font-weight: bold;
+        margin: 0.4rem 0 0.3rem;
+    }
+    .setTop{
+        position: relative;
+        .stLeft{
+            width: 58.84%;
+            >img{
+                width: 100%;
+            }
+        }
+        .stRight{
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            >img{
+                height: 100%;
+            }
+        }
+    }
+    .setBottom{
+        position: relative;
+        margin-top: 0.05rem;
+        .sbLeft{
+            width: 38%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            >img{
+                width: 100%;
+            }
+            >img:nth-child(2){
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        .sbRight{
+            width: 61.16%;
+            margin-left: 38.84%;
+            >img{
+                width: 100%;
+            }
+        }
+    }
+}
+#honor{
+    .titleBox{
+        margin:0.7rem 0 0.6rem;
+    }
+    .hTitle{
+        position: relative;
+        width: 3.45rem;
+        margin: 0 auto 0.3rem;
+        p:nth-child(1){
+            text-align: justify;
+            font-size: 0.26rem;
+            color:$blue;
+        }
+        p:nth-child(2){
+            text-align: justify;
+            font-size: 0.22rem;
+            color:$blue;
+        }
+    }
+    .hTitle::after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -18%;
+        width: 16%;
+        border-bottom: 1px solid $blue;
+    }
+    .hTitle::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -18%;
+        width: 16%;
+        border-bottom: 1px solid $blue;
+    }
+    .swiper-container {
+        width: 50%!important;
+        overflow: visible;
+    }
+    .swiper-wrapper{
+        width: 100%!important;
+        .swiper-slide{
+            width: 100%!important;
+        }
+    }
+    .bannerBox{
+        >img{
+            width: 100%;
+        }
+        p{
+            font-size: 0.22rem;
+            color: #555555;
+            text-align: center;
+            line-height: 0.38rem;
+        }
+    }
+}
+#teamwork{
+    .titleBox{
+        margin:0.6rem 0;
+    }
+    .tTitle{
+        position: relative;
+        p:nth-child(1){
+            text-align: center;
+            font-size: 0.26rem;
+            color:$blue;
+        }
+        p:nth-child(2){
+            text-align: center;
+            font-size: 0.22rem;
+            color:$blue;
+        }
+    }
+    .tTop{
+        width: 100%;
+        position: relative;
+        margin-top: 0.4rem;
+        p{
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            font-size: 0.24rem;
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            line-height: 0.5rem;
+        }
+        >img{
+            width: 100%;
+        }
+    }
+    .tLeft,.tRight{
+        width: 49.13%;
+        position: relative;
+        >img{
+            width: 100%;
+        }
+        p{
+            text-align: center;
+            font-size: 0.14rem;
+            color: white;
+            line-height: 0.3rem;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.5);
+        }
+    }
+    .tBottom{
+        margin-top: 0.14rem;
+    }
+}
+#join{
+    padding: 0.8rem 0 0;
+}
+.supBox{
+    margin-top: 0.6rem;
+    .floatl{
+        width: 33.3333%;
+        img{
+            width: 100%;
+        }
+    }
+}
+#support{
+   padding: 0.8rem 0 0;
+   .titles{
+       margin-bottom: 0.6rem;
+   }
+   .swiper-slide{
+       width: 100%;
+       >img{
+           width: 100%;
+       }
+   }
+   .swiper-pagination-bullet{
+       background: #C8C8C8;
+       opacity: 1;
+   }
+   .swiper-pagination-bullet-active{
+       background: #a51e32;
+   }
+}
+.now{
+    padding: 0.6rem 0 0.4rem;
+    button{
+        width: 37.33%;
+        height: 0.7rem;
+        background-color: $blue;
+        color: white;
+        font-size: 0.26rem;
+        margin: 0 auto;
+        border-radius: 5px;
+        display: block;
+    }
+}
