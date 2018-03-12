@@ -89,33 +89,120 @@ body {
 
 .swiperBtn {
   width: 97.33%;
-  margin-left: 2.67%; }
-  .swiperBtn .swiper-container {
-    width: 43%;
-    overflow: visible;
-    margin-left: 43%; }
-    .swiperBtn .swiper-container .sBtn {
-      width: 90.45%;
-      position: relative; }
-      .swiperBtn .swiper-container .sBtn .pBox {
-        position: absolute;
-        top: 0;
-        left: 0;
+  margin-left: 2.67%;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  margin-top: 0.2rem; }
+  .swiperBtn .swiperBox .sBtn {
+    width: 2.4rem;
+    margin-right: 0.3rem;
+    position: relative; }
+    .swiperBtn .swiperBox .sBtn .pBox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      display: -webkit-flex;
+      -webkit-align-items: center;
+      -webkit-justify-content: center;
+      -webkit-flex-direction: column; }
+      .swiperBtn .swiperBox .sBtn .pBox p {
+        font-size: 0.3rem;
+        color: #7bd5f2;
+        margin: -0.02rem  0 0 -0.02rem; }
+    .swiperBtn .swiperBox .sBtn input {
+      display: block;
+      width: 100%; }
+  .swiperBtn .swiperBox .sBtn:nth-child(1) .pBox p {
+    color: white; }
+  .swiperBtn .swiperBox .sBtn:nth-last-child(2) {
+    margin-right: 0; }
+
+.ptOneTitle {
+  margin: 0.2rem auto 0.3rem; }
+  .ptOneTitle ul li:nth-child(1) {
+    text-align: center;
+    font-size: 0.38rem;
+    line-height: 0.7rem;
+    color: #4473b7;
+    font-weight: bold; }
+  .ptOneTitle ul li:nth-child(2) {
+    width: 20%;
+    margin: 0 auto;
+    margin-bottom: 0.2rem; }
+    .ptOneTitle ul li:nth-child(2) p {
+      width: 100%;
+      height: 1px;
+      background-color: #4473b7; }
+    .ptOneTitle ul li:nth-child(2) span {
+      display: block;
+      width: 50%;
+      margin-left: 50%;
+      height: 1px;
+      background-color: #ff7499; }
+  .ptOneTitle ul li:nth-child(3) {
+    width: 87.88%;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 0.24rem;
+    line-height: 0.4rem;
+    color: #4473b7;
+    font-weight: bold; }
+
+.ptoIn {
+  width: 100%;
+  padding: 0.1rem;
+  background-color: #7bd5f2;
+  position: relative; }
+  .ptoIn > img {
+    width: 100%; }
+  .ptoIn .ptop {
+    position: absolute;
+    top: 0.1rem;
+    left: 0;
+    width: 28%; }
+    .ptoIn .ptop > img {
+      width: 100%; }
+    .ptoIn .ptop > div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      display: -webkit-flex;
+      -webkit-align-items: center;
+      -webkit-justify-content: center;
+      -webkit-flex-direction: column; }
+      .ptoIn .ptop > div p {
+        font-size: 0.26rem;
+        color: white;
         width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        display: -webkit-flex;
-        -webkit-align-items: center;
-        -webkit-justify-content: center;
-        -webkit-flex-direction: column; }
-        .swiperBtn .swiper-container .sBtn .pBox p {
-          font-size: 0.3rem;
-          color: #7bd5f2; }
-      .swiperBtn .swiper-container .sBtn input {
-        display: block;
+        text-indent: 0.2rem; }
+
+.ptoBottom {
+  padding: 0.25rem 0;
+  background-color: #7bd5f2; }
+  .ptoBottom .ptoThree {
+    width: 12.67%;
+    margin-left: 4.2%; }
+    .ptoBottom .ptoThree > img {
+      width: 100%; }
+  .ptoBottom .floatr {
+    width: 39%;
+    margin-right: 2.1%; }
+    .ptoBottom .floatr a {
+      width: 100%;
+      display: block; }
+      .ptoBottom .floatr a > img {
         width: 100%; }
 
 /*# sourceMappingURL=subject.css.map */
